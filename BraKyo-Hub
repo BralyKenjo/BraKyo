@@ -1,0 +1,81 @@
+--[[
+    BRAKYO HUB - VIETNAMESE TRANSLATOR (OPTIMIZED)
+    - Tự động dịch giao diện và load script.
+]]
+
+-- ============ 1. TỪ ĐIỂN DỊCH ============
+local Translations = {
+    ["[KEY] BRAKYO HUB"] = "🔐 HỆ THỐNG KEY BRAKYO",
+    ["BRAKYO KEY"] = "KEY BRAKYO",
+    ["Key expires in 1 day, resets at midnight (VN Time)."] = "Key có hạn 1 ngày, tự reset vào 0h (Giờ VN).",
+    ["key sẽ có hạn trong 1 ngày, sang ngày mới tự hết dù cho lấy ở giờ nào"] = "Key có hạn 1 ngày, tự reset vào 0h (Giờ VN).",
+    ["Enter key here..."] = "Nhập key tại đây...",
+    ["Nhập key tại đây (VD: BK - ...)"] = "Nhập key tại đây (VD: BK - ...)",
+    ["[OK] SUBMIT KEY"] = "✅ XÁC NHẬN KEY",
+    ["XÁC NHẬN KEY"] = "✅ XÁC NHẬN KEY",
+    ["[OK] SUCCESS"] = "✅ THÀNH CÔNG",
+    ["[OK] Valid Key! Opening..."] = "✅ Key hợp lệ! Đang mở...",
+    ["[X] Key already used!"] = "❌ Key này đã được sử dụng rồi!",
+    ["[X] Invalid Key!"] = "❌ Key không hợp lệ!",
+    ["[OK] Copied "] = "✅ Đã copy ",
+    ["✅ Đã copy "] = "✅ Đã copy ",
+    ["BRAKYO HUB"] = "BRAKYO HUB",
+    ["Search script..."] = "🔍 Tìm script...",
+    ["🔍 Tìm script..."] = "🔍 Tìm script...",
+    ["Steal an egg"] = "Trộm Trứng",
+    ["Blox Fruit"] = "Blox Fruit",
+    ["Ride Pets"] = "Ride Pets",
+    ["... Loading..."] = "⏳ Đang tải...",
+    ["[OK] Success!"] = "✅ Tải thành công!",
+    ["[X] Failed"] = "❌ Lỗi tải"
+}
+
+-- ============ 2. TỐI ƯU TỪ ĐIỂN (Tránh dịch đè) ============
+-- Sắp xếp các từ khóa dài hơn lên đầu để dịch trước
+local SortedKeys = {}
+for k, v in pairs(Translations) do
+    table.insert(SortedKeys, {en = k, vi = v})
+end
+table.sort(SortedKeys, function(a, b) 
+    return #a.en > #b.en 
+end)
+
+-- ============ 3. CÀI ĐẶT HOOK DỊCH THUẬT (Có chống Crash) ============
+local hookSuccess = pcall(function()
+    local OldNewIndex
+    OldNewIndex = hookmetamethod(game, "__newindex", function(self, key, value)
+        if not checkcaller() and type(value) == "string" then
+            if (key == "Text" or key == "PlaceholderText") and (self:IsA("TextLabel") or self:IsA("TextButton") or self:IsA("TextBox")) then
+                -- Dịch chính xác từng từ
+                if Translations[value] then
+                    value = Translations[value]
+                else
+                    -- Dịch chuỗi con (Dùng mảng đã sắp xếp để tránh lỗi)
+                    for _, dict in ipairs(SortedKeys) do
+                        if string.find(value, dict.en, 1, true) then
+                            value = string.gsub(value, dict.en, dict.vi)
+                        end
+                    end
+                end
+            end
+        end
+        return OldNewIndex(self, key, value)
+    end)
+end)
+
+if hookSuccess then
+    print("[TRANSLATOR] Đã kích hoạt bộ dịch tiếng Việt!")
+else
+    warn("[TRANSLATOR] Executor không hỗ trợ hookmetamethod, sẽ tải script không có bản dịch.")
+end
+
+-- ============ 4. TẢI SCRIPT BRAKYO GỐC ============
+task.wait(0.2) -- Đợi hook ổn định
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://github.com/BralyKenjo/BraKyo/raw/refs/heads/main/BraKyoHub"))()
+end)
+
+if not success then
+    warn("[BRAKYO] Lỗi tải script gốc:", err)
+end
