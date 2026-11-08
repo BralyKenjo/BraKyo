@@ -1,0 +1,518 @@
+local _0x29CF = game:GetService("Players")
+local _0x2F7D = game:GetService("TweenService")
+local _0xC060 = game:GetService("UserInputService")
+local _0x711C = game:GetService("HttpService")
+local _0x72DB = game:GetService("CoreGui")
+local _0x43AA = _0x29CF.LocalPlayer
+local _0x438F = _0x43AA:WaitForChild("PlayerGui")local _0xFC49
+do
+local _0xB8AB = pcall(function()
+local _0xF4F1 = Instance.new("ScreenGui")
+_0xF4F1.Parent = _0x72DB
+_0xF4F1:Destroy()
+end)
+_0xFC49 = _0xB8AB and _0x72DB or _0x438F
+enddo
+local _0x1814 = _0xFC49:FindFirstChild("VirexScriptHub")
+if _0x1814 then _0x1814:Destroy() end
+endlocal _0xAABC = {
+Background = Color3.fromRGB(18, 18, 20),
+Sidebar = Color3.fromRGB(24, 24, 28),
+CardBackground = Color3.fromRGB(32, 32, 38),
+CardHover = Color3.fromRGB(42, 42, 50),
+Accent = Color3.fromRGB(255, 51, 75),
+TextPrimary = Color3.fromRGB(255, 255, 255),
+TextSecondary = Color3.fromRGB(160, 160, 170),
+Stroke = Color3.fromRGB(45, 45, 55),
+ToggleOff = Color3.fromRGB(60, 60, 70),
+Error = Color3.fromRGB(80, 30, 40),
+}local _0xFF3D = Instance.new("ScreenGui")
+_0xFF3D.Name ="VirexScriptHub"_0xFF3D.ResetOnSpawn = false
+_0xFF3D.IgnoreGuiInset = true
+_0xFF3D.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+_0xFF3D.DisplayOrder = 999
+_0xFF3D.Parent = _0xFC49local _0x3AA8 = Instance.new("Frame")
+_0x3AA8.Name ="MainFrame"_0x3AA8.AnchorPoint = Vector2.new(0.5, 0.5)
+_0x3AA8.Position = UDim2.new(0.5, 0, 0.5, 0)
+_0x3AA8.Size = UDim2.new(0, 0, 0, 0)
+_0x3AA8.BackgroundColor3 = _0xAABC.Background
+_0x3AA8.BorderSizePixel = 0
+_0x3AA8.ClipsDescendants = true
+_0x3AA8.Transparency = 1
+_0x3AA8.Parent = _0xFF3D
+local _0x5971 = Instance.new("UICorner")
+_0x5971.CornerRadius = UDim.new(0, 12)
+_0x5971.Parent = _0x3AA8
+local _0x7A91 = Instance.new("UIStroke")
+_0x7A91.Color = _0xAABC.Stroke
+_0x7A91.Thickness = 1.5
+_0x7A91.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+_0x7A91.Parent = _0x3AA8local _0x6844 = Instance.new("Frame")
+_0x6844.Name ="TopBar"_0x6844.Size = UDim2.new(1, 0, 0, 42)
+_0x6844.BackgroundColor3 = _0xAABC.Sidebar
+_0x6844.BorderSizePixel = 0
+_0x6844.Parent = _0x3AA8
+local _0xF04F = Instance.new("UICorner")
+_0xF04F.CornerRadius = UDim.new(0, 12)
+_0xF04F.Parent = _0x6844
+local _0x56BF = Instance.new("Frame")
+_0x56BF.Size = UDim2.new(1, 0, 0, 6)
+_0x56BF.Position = UDim2.new(0, 0, 1, -6)
+_0x56BF.BackgroundColor3 = _0xAABC.Sidebar
+_0x56BF.BorderSizePixel = 0
+_0x56BF.Parent = _0x6844
+local _0xC306 = Instance.new("TextLabel")
+_0xC306.Size = UDim2.new(0, 200, 1, 0)
+_0xC306.Position = UDim2.new(0, 18, 0, 0)
+_0xC306.BackgroundTransparency = 1
+_0xC306.Font = Enum.Font.GothamBold
+_0xC306.Text ="🔥 VIREX"_0xC306.TextColor3 = _0xAABC.Accent
+_0xC306.TextSize = 18
+_0xC306.TextXAlignment = Enum.TextXAlignment.Left
+_0xC306.Parent = _0x6844local _0xE21C = Instance.new("TextButton")
+_0xE21C.Size = UDim2.new(0, 30, 0, 30)
+_0xE21C.Position = UDim2.new(1, -38, 0.5, -15)
+_0xE21C.BackgroundColor3 = Color3.fromRGB(45, 45, 55)
+_0xE21C.Text ="✕"_0xE21C.TextColor3 = _0xAABC.TextPrimary
+_0xE21C.TextSize = 14
+_0xE21C.Font = Enum.Font.GothamBold
+_0xE21C.AutoButtonColor = false
+_0xE21C.Parent = _0x6844
+local _0x9898 = Instance.new("UICorner")
+_0x9898.CornerRadius = UDim.new(0, 8)
+_0x9898.Parent = _0xE21C
+local _0xF9F8 = false
+_0xE21C.MouseEnter:Connect(function()
+if not _0xF9F8 then
+_0x2F7D:Create(_0xE21C, TweenInfo.new(0.15), {BackgroundColor3 = _0xAABC.Accent}):Play()
+end
+end)
+_0xE21C.MouseLeave:Connect(function()
+if not _0xF9F8 then
+_0x2F7D:Create(_0xE21C, TweenInfo.new(0.15), {BackgroundColor3 = Color3.fromRGB(45,45,55)}):Play()
+end
+end)
+_0xE21C.MouseButton1Click:Connect(function()
+if _0xF9F8 then return end
+_0xF9F8 = true
+local _0x5423 = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+_0x2F7D:Create(_0x3AA8, _0x5423, {
+Size = UDim2.new(0, 0, 0, 0),
+Transparency = 1,
+}):Play()
+task.wait(0.3)
+_0xFF3D:Destroy()
+end)local _0x7298 = Instance.new("Frame")
+_0x7298.Name ="Sidebar"_0x7298.Size = UDim2.new(0, 120, 1, -42)
+_0x7298.Position = UDim2.new(0, 0, 0, 42)
+_0x7298.BackgroundColor3 = _0xAABC.Sidebar
+_0x7298.BorderSizePixel = 0
+_0x7298.Parent = _0x3AA8
+local _0xE50E = Instance.new("Frame")
+_0xE50E.Size = UDim2.new(0, 1, 1, 0)
+_0xE50E.Position = UDim2.new(1, -1, 0, 0)
+_0xE50E.BackgroundColor3 = _0xAABC.Stroke
+_0xE50E.BorderSizePixel = 0
+_0xE50E.Parent = _0x7298local _0x299A = Instance.new("Frame")
+_0x299A.Size = UDim2.new(1, -120, 1, -42)
+_0x299A.Position = UDim2.new(0, 120, 0, 42)
+_0x299A.BackgroundTransparency = 1
+_0x299A.ClipsDescendants = true
+_0x299A.Parent = _0x3AA8local _0x44C1 = {}
+for _, _0xD606 in ipairs({"Scripts","Config"}) do
+local _0x5D58 = Instance.new("ScrollingFrame")
+_0x5D58.Name = _0xD606 .."Page"_0x5D58.Size = UDim2.new(1, 0, 1, 0)
+_0x5D58.BackgroundTransparency = 1
+_0x5D58.BorderSizePixel = 0
+_0x5D58.ScrollBarThickness = 4
+_0x5D58.ScrollBarImageColor3 = _0xAABC.Accent
+_0x5D58.CanvasSize = UDim2.new(0, 0, 0, 0)
+_0x5D58.AutomaticCanvasSize = Enum.AutomaticSize.Y
+_0x5D58.ScrollingDirection = Enum.ScrollingDirection.Y
+_0x5D58.Visible = (_0xD606 =="Scripts")
+_0x5D58.Parent = _0x299A
+local _0xEB05 = Instance.new("UIListLayout")
+_0xEB05.SortOrder = Enum.SortOrder.LayoutOrder
+_0xEB05.Padding = UDim.new(0, 8)
+_0xEB05.Parent = _0x5D58
+local _0xE541 = Instance.new("UIPadding")
+_0xE541.PaddingTop = UDim.new(0, 10)
+_0xE541.PaddingBottom = UDim.new(0, 10)
+_0xE541.PaddingLeft = UDim.new(0, 10)
+_0xE541.PaddingRight = UDim.new(0, 10)
+_0xE541.Parent = _0x5D58
+_0x44C1[_0xD606] = _0x5D58
+endlocal _0xFD84 = Instance.new("Frame")
+_0xFD84.Size = UDim2.new(1, 0, 0, 0)
+_0xFD84.AutomaticSize = Enum.AutomaticSize.Y
+_0xFD84.Position = UDim2.new(0, 0, 0, 10)
+_0xFD84.BackgroundTransparency = 1
+_0xFD84.Parent = _0x7298
+local _0xB2D9 = Instance.new("UIListLayout")
+_0xB2D9.SortOrder = Enum.SortOrder.LayoutOrder
+_0xB2D9.Padding = UDim.new(0, 5)
+_0xB2D9.Parent = _0xFD84
+local _0xABF9 = Instance.new("UIPadding")
+_0xABF9.PaddingLeft = UDim.new(0, 8)
+_0xABF9.PaddingRight = UDim.new(0, 8)
+_0xABF9.Parent = _0xFD84local _0x86BC = {}
+local _0x190D = nil
+local function _0xB5D4(_0xD606, instant)
+_0x190D = _0xD606
+for tabName, _0xBDB0 in pairs(_0x86BC) do
+local _0xA3CE = tabName == _0xD606
+local _0x4A80 = {
+BackgroundColor3 = _0xA3CE and _0xAABC.CardBackground or _0xAABC.Sidebar,
+TextColor3 = _0xA3CE and _0xAABC.TextPrimary or _0xAABC.TextSecondary,
+}
+if instant then
+for k, v in pairs(_0x4A80) do _0xBDB0[k] = v end
+else
+_0x2F7D:Create(_0xBDB0, TweenInfo.new(0.2, Enum.EasingStyle.Quad), _0x4A80):Play()
+end
+local _0xEAE4 = _0xBDB0:FindFirstChild("Indicator")
+if _0xEAE4 then
+local _0xAFBF = {
+BackgroundTransparency = _0xA3CE and 0 or 1,
+Size = _0xA3CE and UDim2.new(0, 3, 0, 20) or UDim2.new(0, 3, 0, 0),
+}
+if instant then
+for k, v in pairs(_0xAFBF) do _0xEAE4[k] = v end
+else
+_0x2F7D:Create(_0xEAE4, TweenInfo.new(0.2), _0xAFBF):Play()
+end
+end
+end
+for pageName, _0x5D58 in pairs(_0x44C1) do
+if pageName == _0xD606 then
+_0x5D58.Position = UDim2.new(0, 8, 0, 0)
+_0x5D58.Visible = true
+_0x2F7D:Create(_0x5D58,
+TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+{ Position = UDim2.new(0, 0, 0, 0) }
+):Play()
+else
+_0x5D58.Visible = false
+end
+end
+end
+local function _0x90B0(_0xD606, text, order)
+local _0xBDB0 = Instance.new("TextButton")
+_0xBDB0.Name = _0xD606 .."Tab"_0xBDB0.Size = UDim2.new(1, 0, 0, 36)
+_0xBDB0.BackgroundColor3 = _0xAABC.Sidebar
+_0xBDB0.Text = text
+_0xBDB0.TextColor3 = _0xAABC.TextSecondary
+_0xBDB0.TextSize = 13
+_0xBDB0.Font = Enum.Font.GothamBold
+_0xBDB0.AutoButtonColor = false
+_0xBDB0.LayoutOrder = order
+_0xBDB0.Parent = _0xFD84
+local _0xAF20 = Instance.new("UICorner")
+_0xAF20.CornerRadius = UDim.new(0, 8)
+_0xAF20.Parent = _0xBDB0
+local _0xEAE4 = Instance.new("Frame")
+_0xEAE4.Name ="Indicator"_0xEAE4.Size = UDim2.new(0, 3, 0, 0)
+_0xEAE4.Position = UDim2.new(0, 0, 0.5, 0)
+_0xEAE4.AnchorPoint = Vector2.new(0, 0.5)
+_0xEAE4.BackgroundColor3 = _0xAABC.Accent
+_0xEAE4.BorderSizePixel = 0
+_0xEAE4.BackgroundTransparency = 1
+_0xEAE4.Parent = _0xBDB0
+local _0xF064 = Instance.new("UICorner")
+_0xF064.CornerRadius = UDim.new(1, 0)
+_0xF064.Parent = _0xEAE4
+_0xBDB0.MouseEnter:Connect(function()
+if _0x190D ~= _0xD606 then
+_0x2F7D:Create(_0xBDB0, TweenInfo.new(0.15), {BackgroundColor3 = _0xAABC.CardHover}):Play()
+end
+end)
+_0xBDB0.MouseLeave:Connect(function()
+if _0x190D ~= _0xD606 then
+_0x2F7D:Create(_0xBDB0, TweenInfo.new(0.15), {BackgroundColor3 = _0xAABC.Sidebar}):Play()
+end
+end)
+_0xBDB0.MouseButton1Click:Connect(function()
+if _0x190D ~= _0xD606 then _0xB5D4(_0xD606) end
+end)
+_0x86BC[_0xD606] = _0xBDB0
+return _0xBDB0
+end
+_0x90B0("Scripts","SCRIPTS", 1)
+_0x90B0("Config","CONFIG", 2)
+_0xB5D4("Scripts", true)local function _0xF96D(_0x5668)
+if type(_0x5668) ~="string"or _0x5668 ==""then return nil endlocal _0xB8AB, _0xDA90 = pcall(function() return game:HttpGet(_0x5668) end)
+if _0xB8AB and type(_0xDA90) =="string"and #_0xDA90 > 0 then return _0xDA90 endfor _, getter in ipairs({
+function() return syn and syn.request end,
+function() return http and http.request end,
+function() return type(request) =="function"and request end,
+}) do
+local _0x36B8, _0x50AA = pcall(getter)
+if _0x36B8 and type(_0x50AA) =="function"then
+local _0xB42B, _0x66DA = pcall(_0x50AA, { Url = _0x5668, Method ="GET"})
+if _0xB42B and type(_0x66DA) =="table"and type(_0x66DA.Body) =="string"then
+return _0x66DA.Body
+end
+end
+endlocal _0xBA1A, _0x1251 = pcall(_0x711C.GetAsync, _0x711C, _0x5668)
+if _0xBA1A and type(_0x1251) =="string"then return _0x1251 end
+return nil
+endlocal function _0x1A69(code)
+if type(code) ~="string"or #code == 0 then return end
+task.spawn(function()
+local _0xB8AB, _0x385F = pcall(function()
+assert(loadstring,"loadstring không khả dụng trên môi trường này")
+local _0x50AA = loadstring(code)
+assert(_0x50AA,"Không thể compile script")
+_0x50AA()
+end)
+if not _0xB8AB then warn("[VIREX] Execute error: ".. tostring(_0x385F)) end
+end)
+endlocal function _0x4554(parent, data, order)
+local _0xD606 = data.Name or data.name or data.title or"Unknown Script"local _0x5668 = data.Url or data.url or data.script or data.code or""local _0x6D55 = data._category or data.description or data.desc or"Script"local _0x0637 = Instance.new("Frame")
+_0x0637.Name ="ScriptCard"_0x0637.Size = UDim2.new(1, -20, 0, 64)
+_0x0637.BackgroundColor3 = _0xAABC.CardBackground
+_0x0637.BorderSizePixel = 0
+_0x0637.LayoutOrder = order or 1
+_0x0637.Parent = parent
+local _0xAF20 = Instance.new("UICorner")
+_0xAF20.CornerRadius = UDim.new(0, 10)
+_0xAF20.Parent = _0x0637
+local _0xE8E1 = Instance.new("UIStroke")
+_0xE8E1.Color = _0xAABC.Stroke
+_0xE8E1.Thickness = 1
+_0xE8E1.Parent = _0x0637
+local _0xA817 = Instance.new("TextLabel")
+_0xA817.Size = UDim2.new(1, -110, 0, 22)
+_0xA817.Position = UDim2.new(0, 14, 0, 8)
+_0xA817.BackgroundTransparency = 1
+_0xA817.Font = Enum.Font.GothamBold
+_0xA817.Text = _0xD606
+_0xA817.TextColor3 = _0xAABC.TextPrimary
+_0xA817.TextSize = 14
+_0xA817.TextXAlignment = Enum.TextXAlignment.Left
+_0xA817.TextTruncate = Enum.TextTruncate.AtEnd
+_0xA817.Parent = _0x0637
+local _0x16C8 = Instance.new("TextLabel")
+_0x16C8.Size = UDim2.new(1, -110, 0, 16)
+_0x16C8.Position = UDim2.new(0, 14, 0, 30)
+_0x16C8.BackgroundTransparency = 1
+_0x16C8.Font = Enum.Font.Gotham
+_0x16C8.Text ="📁 ".. _0x6D55
+_0x16C8.TextColor3 = _0xAABC.TextSecondary
+_0x16C8.TextSize = 11
+_0x16C8.TextXAlignment = Enum.TextXAlignment.Left
+_0x16C8.TextTruncate = Enum.TextTruncate.AtEnd
+_0x16C8.Parent = _0x0637local _0x5485 = Instance.new("TextButton")
+_0x5485.Size = UDim2.new(0, 42, 0, 22)
+_0x5485.Position = UDim2.new(1, -54, 0.5, -11)
+_0x5485.BackgroundColor3 = _0xAABC.ToggleOff
+_0x5485.Text =""_0x5485.AutoButtonColor = false
+_0x5485.Parent = _0x0637
+local _0xA897 = Instance.new("UICorner")
+_0xA897.CornerRadius = UDim.new(1, 0)
+_0xA897.Parent = _0x5485
+local _0xD601 = Instance.new("Frame")
+_0xD601.Size = UDim2.new(0, 18, 0, 18)
+_0xD601.Position = UDim2.new(0, 2, 0.5, -9)
+_0xD601.BackgroundColor3 = _0xAABC.TextPrimary
+_0xD601.BorderSizePixel = 0
+_0xD601.Parent = _0x5485
+local _0x9A75 = Instance.new("UICorner")
+_0x9A75.CornerRadius = UDim.new(1, 0)
+_0x9A75.Parent = _0xD601
+local _0x2DE1 = false
+_0x5485.MouseButton1Click:Connect(function()
+_0x2DE1 = not _0x2DE1
+local _0x3041 = _0x2DE1 and UDim2.new(1, -20, 0.5, -9) or UDim2.new(0, 2, 0.5, -9)
+local _0xB20E = _0x2DE1 and _0xAABC.Accent or _0xAABC.ToggleOff
+_0x2F7D:Create(_0xD601,
+TweenInfo.new(0.22, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+{ Position = _0x3041 }):Play()
+_0x2F7D:Create(_0x5485, TweenInfo.new(0.22),
+{ BackgroundColor3 = _0xB20E }):Play()if _0x2DE1 and _0x5668 ~=""then
+_0x16C8.Text ="⏳ Đang tải..."_0x16C8.TextColor3 = _0xAABC.Accent
+task.spawn(function()
+local _0x46F9, _0xE226 = pcall(_0xF96D, _0x5668)
+if _0x46F9 and type(_0xE226) =="string"and #_0xE226 > 0 then
+_0x16C8.Text ="✅ Đang chạy: ".. _0x6D55
+_0x16C8.TextColor3 = Color3.fromRGB(120, 220, 140)
+_0x1A69(_0xE226)
+else
+_0x16C8.Text ="❌ Không tải được script"_0x16C8.TextColor3 = _0xAABC.Accent
+warn("[VIREX] Fetch failed: ".. tostring(_0x5668))
+_0x2DE1 = false
+_0x2F7D:Create(_0xD601,
+TweenInfo.new(0.22), { Position = UDim2.new(0, 2, 0.5, -9) }):Play()
+_0x2F7D:Create(_0x5485,
+TweenInfo.new(0.22), { BackgroundColor3 = _0xAABC.ToggleOff }):Play()
+end
+end)
+end
+end)
+_0x0637.MouseEnter:Connect(function()
+_0x2F7D:Create(_0x0637, TweenInfo.new(0.15), {BackgroundColor3 = _0xAABC.CardHover}):Play()
+_0x2F7D:Create(_0xE8E1, TweenInfo.new(0.15), {Color = _0xAABC.Accent, Transparency = 0.5}):Play()
+end)
+_0x0637.MouseLeave:Connect(function()
+_0x2F7D:Create(_0x0637, TweenInfo.new(0.15), {BackgroundColor3 = _0xAABC.CardBackground}):Play()
+_0x2F7D:Create(_0xE8E1, TweenInfo.new(0.15), {Color = _0xAABC.Stroke, Transparency = 0}):Play()
+end)
+return _0x0637
+endlocal function _0x2DD5(parent, msg)
+local _0x8BE4 = Instance.new("Frame")
+_0x8BE4.Size = UDim2.new(1, -20, 0, 64)
+_0x8BE4.BackgroundColor3 = _0xAABC.Error
+_0x8BE4.BorderSizePixel = 0
+_0x8BE4.LayoutOrder = 1
+_0x8BE4.Parent = parent
+local _0xAF20 = Instance.new("UICorner")
+_0xAF20.CornerRadius = UDim.new(0, 10)
+_0xAF20.Parent = _0x8BE4
+local _0xE771 = Instance.new("TextLabel")
+_0xE771.Size = UDim2.new(1, -20, 1, 0)
+_0xE771.Position = UDim2.new(0, 12, 0, 0)
+_0xE771.BackgroundTransparency = 1
+_0xE771.Text ="⚠ ".. msg
+_0xE771.TextColor3 = _0xAABC.Accent
+_0xE771.TextSize = 12
+_0xE771.Font = Enum.Font.Gotham
+_0xE771.TextWrapped = true
+_0xE771.TextXAlignment = Enum.TextXAlignment.Left
+_0xE771.Parent = _0x8BE4
+endlocal _0x8E21 ="https://raw.githubusercontent.com/bn130189-lgtm/Tong-hop-script/main/script.json"local _0xFC73 ="steal an egg"local function _0x789E(data)
+local _0xDB9B = {}
+if type(data) ~="table"then return _0xDB9B endif #data > 0 then
+for _, item in ipairs(data) do
+if type(item) =="table"then table.insert(_0xDB9B, item) end
+end
+return _0xDB9B
+endfor gameName, list in pairs(data) do
+if type(list) =="table"and string.lower(tostring(gameName)) == _0xFC73 then
+for _, item in ipairs(list) do
+if type(item) =="table"then
+item._category = tostring(gameName)
+table.insert(_0xDB9B, item)
+end
+end
+end
+end
+return _0xDB9B
+end
+local function _0x5E99()for _, child in ipairs(_0x44C1.Scripts:GetChildren()) do
+if child:IsA("Frame") then child:Destroy() end
+end
+local _0xB8AB, _0xF1CD = pcall(function()
+local _0xE226 = _0xF96D(_0x8E21)
+if not _0xE226 then error("Không tải được JSON (kiểm tra mạng / HttpEnabled)") end
+return _0x711C:JSONDecode(_0xE226)
+end)
+if not _0xB8AB then
+warn("[VIREX] Load failed: ".. tostring(_0xF1CD))
+_0x2DD5(_0x44C1.Scripts,"Không thể tải danh sách script.\n".. tostring(_0xF1CD))
+return
+end
+local _0x7B77 = _0x789E(_0xF1CD)
+if #_0x7B77 == 0 then
+_0x2DD5(_0x44C1.Scripts,"Không tìm thấy script nào cho \"Steal an Egg\".")
+return
+end
+for i, data in ipairs(_0x7B77) do
+if type(data) =="table"then
+local _0x9C41, _0x385F = pcall(_0x4554, _0x44C1.Scripts, data, i)
+if not _0x9C41 then
+warn("[VIREX] Card error: ".. tostring(_0x385F))
+end
+end
+end
+end
+_0x5E99()local _0x7C88 = Instance.new("TextLabel")
+_0x7C88.Size = UDim2.new(1, -20, 0, 28)
+_0x7C88.BackgroundTransparency = 1
+_0x7C88.Font = Enum.Font.GothamBold
+_0x7C88.Text ="⚙ Cài đặt"_0x7C88.TextColor3 = _0xAABC.TextPrimary
+_0x7C88.TextSize = 15
+_0x7C88.TextXAlignment = Enum.TextXAlignment.Left
+_0x7C88.LayoutOrder = 1
+_0x7C88.Parent = _0x44C1.Config
+local function _0x342B(text, order)
+local _0xBCFF = Instance.new("Frame")
+_0xBCFF.Size = UDim2.new(1, -20, 0, 44)
+_0xBCFF.BackgroundColor3 = _0xAABC.CardBackground
+_0xBCFF.BorderSizePixel = 0
+_0xBCFF.LayoutOrder = order
+_0xBCFF.Parent = _0x44C1.Config
+local _0xAF20 = Instance.new("UICorner")
+_0xAF20.CornerRadius = UDim.new(0, 8)
+_0xAF20.Parent = _0xBCFF
+local _0xE771 = Instance.new("TextLabel")
+_0xE771.Size = UDim2.new(1, -70, 1, 0)
+_0xE771.Position = UDim2.new(0, 12, 0, 0)
+_0xE771.BackgroundTransparency = 1
+_0xE771.Font = Enum.Font.Gotham
+_0xE771.Text = text
+_0xE771.TextColor3 = _0xAABC.TextPrimary
+_0xE771.TextSize = 12
+_0xE771.TextXAlignment = Enum.TextXAlignment.Left
+_0xE771.Parent = _0xBCFF
+local _0xF4F1 = Instance.new("TextButton")
+_0xF4F1.Size = UDim2.new(0, 42, 0, 22)
+_0xF4F1.Position = UDim2.new(1, -54, 0.5, -11)
+_0xF4F1.BackgroundColor3 = _0xAABC.ToggleOff
+_0xF4F1.Text =""_0xF4F1.AutoButtonColor = false
+_0xF4F1.Parent = _0xBCFF
+local _0xA897 = Instance.new("UICorner")
+_0xA897.CornerRadius = UDim.new(1, 0)
+_0xA897.Parent = _0xF4F1
+local _0x6DB3 = Instance.new("Frame")
+_0x6DB3.Size = UDim2.new(0, 18, 0, 18)
+_0x6DB3.Position = UDim2.new(0, 2, 0.5, -9)
+_0x6DB3.BackgroundColor3 = _0xAABC.TextPrimary
+_0x6DB3.Parent = _0xF4F1
+local _0x9A75 = Instance.new("UICorner")
+_0x9A75.CornerRadius = UDim.new(1, 0)
+_0x9A75.Parent = _0x6DB3
+local _0x1EBF = false
+_0xF4F1.MouseButton1Click:Connect(function()
+_0x1EBF = not _0x1EBF
+_0x2F7D:Create(_0x6DB3,
+TweenInfo.new(0.22, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+{ Position = _0x1EBF and UDim2.new(1, -20, 0.5, -9) or UDim2.new(0, 2, 0.5, -9) }):Play()
+_0x2F7D:Create(_0xF4F1, TweenInfo.new(0.22),
+{ BackgroundColor3 = _0x1EBF and _0xAABC.Accent or _0xAABC.ToggleOff }):Play()
+end)
+end
+_0x342B("Auto Execute khi mở Hub", 2)
+_0x342B("Hiệu ứng âm thanh", 3)
+_0x342B("Chế độ tối giản", 4)local _0x6FB8, _0xC377, _0x7A7B, _0xE78C
+_0x6844.InputBegan:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseButton1
+or input.UserInputType == Enum.UserInputType.Touch then
+_0x6FB8 = true
+_0x7A7B = input.Position
+_0xE78C = _0x3AA8.Position
+input.Changed:Connect(function()
+if input.UserInputState == Enum.UserInputState.End then
+_0x6FB8 = false
+end
+end)
+end
+end)
+_0x6844.InputChanged:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseMovement
+or input.UserInputType == Enum.UserInputType.Touch then
+_0xC377 = input
+end
+end)
+_0xC060.InputChanged:Connect(function(input)
+if input == _0xC377 and _0x6FB8 then
+local _0xEF5E = input.Position - _0x7A7B
+_0x3AA8.Position = UDim2.new(
+_0xE78C.X.Scale, _0xE78C.X.Offset + _0xEF5E.X,
+_0xE78C.Y.Scale, _0xE78C.Y.Offset + _0xEF5E.Y
+)
+end
+end)task.wait()
+_0x2F7D:Create(_0x3AA8,
+TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out),
+{ Size = UDim2.new(0, 520, 0, 340), Transparency = 0 }
+):Play()
