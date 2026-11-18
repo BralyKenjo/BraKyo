@@ -1,0 +1,408 @@
+local _mj8I0a7W8y9f6      = game:GetService((string.char(80,108,97,121,101,114,115)))
+local _it5z9j2q6h8          = game:GetService((string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101)))
+local _jO4G8s5y4 = game:GetService((string.char(84,119,101,101,110,83,101,114,118,105,99,101)))
+local _ey9I1r9x1P0x2  = game:GetService((string.char(72,116,116,112,83,101,114,118,105,99,101)))
+local _Qj6F6k8j1R2U3    = _mj8I0a7W8y9f6.LocalPlayer
+local _QU9h5b9=1479;
+for _eR3H3u3=1,2 do local _tN3e4h6=_eR3H3u3*3 end
+local _Fk3O4F3d5w7J2 = _Qj6F6k8j1R2U3:WaitForChild((string.char(80,108,97,121,101,114,71,117,105)))
+local _mS9f0W8u0L5 = (string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,98,110,49,51,48,49,56,57,45,108,103,116,109,47,84,111,110,103,45,104,111,112,45,115,99,114,105,112,116,47,109,97,105,110,47,115,99,114,105,112,116,46,106,115,111,110))
+for _Nc0v5T3=1,2 do local _au7c9I4=_Nc0v5T3*4 end
+local _SW4u4F9k1f7       = (string.char(114,98,120,97,115,115,101,116,105,100,58,47,47,55,55,56,54,53,48,49,53,54,48,54,57,49,48))
+local _Lc0h9t0 = Color3.fromRGB(0, 170, 220)
+if false then local _Rc7i9w1=nil end
+local _uQ2R8w5S2X5 = Color3.fromRGB(0, 70, 100)
+local _du1E4p8=8078;
+if 6==7 then local _xD1f0A0=1 else local _CK8y3F0=2 end
+local _BT4U6M1     = Color3.fromRGB(12, 22, 32)
+local _Xk3N3Z7b1q5   = Color3.fromRGB(4, 10, 16)
+local _Es9K8l8={36,66,37};
+if false then local _dT4B0V0=nil end
+local _Ox3n9z3L4a8g9 = workspace.CurrentCamera.ViewportSize
+local _ZG2x3Z4P8x7d3 = (_Ox3n9z3L4a8g9.X < 550) or _it5z9j2q6h8.TouchEnabled
+local _Uo1i4C0k1c3        = (_ZG2x3Z4P8x7d3 and 360) or 520
+local _Uu7l3m9        = (_ZG2x3Z4P8x7d3 and math.min(430, _Ox3n9z3L4a8g9.Y - 80)) or 520
+local _wB9J5r4L5w1    = (_ZG2x3Z4P8x7d3 and 0.85) or 0.95
+for _XD9t3Q3=1,1 do local _Gd0Z7R7=_XD9t3Q3*3 end
+if false then local _Zg9K4Q7=nil end
+pcall(function()
+if _Fk3O4F3d5w7J2:FindFirstChild((string.char(66,114,97,75,121,111,85,73))) then
+_Fk3O4F3d5w7J2.BraKyoUI:Destroy()
+end
+end)
+local _kx0x8O0U2 = Instance.new((string.char(83,99,114,101,101,110,71,117,105)))
+_kx0x8O0U2.Name           = (string.char(66,114,97,75,121,111,85,73))
+if false then local _ox2Z5s0=nil end
+_kx0x8O0U2.ResetOnSpawn   = false
+_kx0x8O0U2.IgnoreGuiInset = true
+if 7==9 then local _NU4d7A4=1 else local _My1e8i3=2 end
+_kx0x8O0U2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+_kx0x8O0U2.DisplayOrder   = 100
+_kx0x8O0U2.Parent         = _Fk3O4F3d5w7J2
+local _BA1o1V4={70,38,51};
+local _vS5E5F9N6r1 = Instance.new((string.char(70,114,97,109,101)))
+_vS5E5F9N6r1.Name                   = (string.char(77,97,105,110))
+local _Bw6K6s6={69,82,19};
+_vS5E5F9N6r1.Size                   = UDim2.fromOffset(_Uo1i4C0k1c3, _Uu7l3m9)
+_vS5E5F9N6r1.Position               = UDim2.new(0.5, -_Uo1i4C0k1c3/2, 0.5, -_Uu7l3m9/2)
+_vS5E5F9N6r1.BackgroundColor3       = Color3.fromRGB(0, 0, 0)
+_vS5E5F9N6r1.BackgroundTransparency = 0.5
+_vS5E5F9N6r1.BorderSizePixel        = 0
+_vS5E5F9N6r1.ClipsDescendants       = true
+_vS5E5F9N6r1.Active                 = true
+_vS5E5F9N6r1.Parent                 = _kx0x8O0U2
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _vS5E5F9N6r1).CornerRadius = UDim.new(0, 18)
+local _lm6k7B0 = Instance.new((string.char(85,73,83,116,114,111,107,101)), _vS5E5F9N6r1)
+local _us6F6b1=(16+43);
+_lm6k7B0.Color        = _Lc0h9t0
+_lm6k7B0.Thickness    = 1.2
+_lm6k7B0.Transparency = 0.35
+local _yc0d8m2r2G3f1 = Instance.new((string.char(85,73,83,99,97,108,101)), _vS5E5F9N6r1)
+local _Wo3U7G8=5288;
+_yc0d8m2r2G3f1.Scale = _wB9J5r4L5w1
+local _hk0g0M3F1N4 = Instance.new((string.char(73,109,97,103,101,76,97,98,101,108)), _vS5E5F9N6r1)
+_hk0g0M3F1N4.Name                   = (string.char(66,71))
+_hk0g0M3F1N4.Size                   = UDim2.new(1, 0, 1, 0)
+_hk0g0M3F1N4.BackgroundTransparency = 1
+_hk0g0M3F1N4.Image                  = _SW4u4F9k1f7
+local _TP8w7S7=3808;
+local _Mu2A7I6=(24+15);
+_hk0g0M3F1N4.ImageTransparency      = 0.88
+_hk0g0M3F1N4.ScaleType              = Enum.ScaleType.Crop
+_hk0g0M3F1N4.ZIndex                 = 0
+local _Qp3v5D2H1e4 = Instance.new((string.char(70,114,97,109,101)), _vS5E5F9N6r1)
+if 6==2 then local _VS2k2E2=1 else local _Lu5X5W4=2 end
+_Qp3v5D2H1e4.Size                   = UDim2.new(1, 0, 0, 52)
+_Qp3v5D2H1e4.BackgroundColor3       = _Xk3N3Z7b1q5
+if 4==8 then local _Hp1y6L1=1 else local _iL2g8t0=2 end
+_Qp3v5D2H1e4.BackgroundTransparency = 0.35
+_Qp3v5D2H1e4.Active                 = true
+_Qp3v5D2H1e4.ZIndex                 = 3
+if false then local _eF6F4Z9=nil end
+local _VB9J6Z3={12,78,49};
+local _hj5k6Q3d3y0c7 = Instance.new((string.char(73,109,97,103,101,76,97,98,101,108)), _Qp3v5D2H1e4)
+_hj5k6Q3d3y0c7.Size                   = UDim2.fromOffset(28, 28)
+_hj5k6Q3d3y0c7.Position               = UDim2.new(0, 12, 0.5, -14)
+local _yK0m9E3=1895;
+if false then local _fj4r5w2=nil end
+_hj5k6Q3d3y0c7.BackgroundTransparency = 1
+_hj5k6Q3d3y0c7.Image                  = _SW4u4F9k1f7
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _hj5k6Q3d3y0c7).CornerRadius = UDim.new(0, 8)
+local _RL1m8W7 = Instance.new((string.char(84,101,120,116,76,97,98,101,108)), _Qp3v5D2H1e4)
+_RL1m8W7.Size                   = UDim2.new(1, -140, 1, 0)
+local _cN0s6d5=2393;
+_RL1m8W7.Position               = UDim2.new(0, 48, 0, 0)
+local _mX2X2w2=6692;
+local _Wh4W6R8={85,74,11};
+_RL1m8W7.BackgroundTransparency = 1
+_RL1m8W7.Text                   = (string.char(66,114,97,75,121,111))
+for _KT3M1v6=1,2 do local _Zp8z7O1=_KT3M1v6*5 end
+_RL1m8W7.TextColor3             = Color3.fromRGB(255, 255, 255)
+_RL1m8W7.TextSize               = 17
+_RL1m8W7.Font                   = Enum.Font.GothamBold
+for _yK1O5n1=1,1 do local _jz8s8O7=_yK1O5n1*3 end
+_RL1m8W7.TextXAlignment         = Enum.TextXAlignment.Left
+local _HP4p0Z8 = Instance.new((string.char(73,109,97,103,101,76,97,98,101,108)), _Qp3v5D2H1e4)
+_HP4p0Z8.Size                   = UDim2.fromOffset(30, 30)
+_HP4p0Z8.Position               = UDim2.new(1, -78, 0.5, -15)
+if 9==1 then local _Tb6i3M2=1 else local _vJ7q2T3=2 end
+_HP4p0Z8.BackgroundTransparency = 1
+_HP4p0Z8.Image                  = _SW4u4F9k1f7
+if 6==7 then local _wI8o9R2=1 else local _pX4r5m2=2 end
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _HP4p0Z8).CornerRadius = UDim.new(1, 0)
+local _vf4d9q4p0Q1 = Instance.new((string.char(84,101,120,116,66,117,116,116,111,110)), _Qp3v5D2H1e4)
+_vf4d9q4p0Q1.Size                   = UDim2.fromOffset(28, 28)
+_vf4d9q4p0Q1.Position               = UDim2.new(1, -38, 0.5, -14)
+_vf4d9q4p0Q1.BackgroundColor3       = _uQ2R8w5S2X5
+_vf4d9q4p0Q1.BackgroundTransparency = 0.4
+for _Vd0o4h6=1,2 do local _Ic4Y9t4=_Vd0o4h6*8 end
+_vf4d9q4p0Q1.Text                   = (string.char(215))
+local _QT4D0J7=7894;
+_vf4d9q4p0Q1.TextColor3             = Color3.fromRGB(255, 255, 255)
+_vf4d9q4p0Q1.TextSize               = 18
+local _aw0g0D5={11,77,31};
+_vf4d9q4p0Q1.Font                   = Enum.Font.GothamBold
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _vf4d9q4p0Q1).CornerRadius = UDim.new(0, 8)
+local _nx6a8t8=(14+32);
+_vf4d9q4p0Q1.MouseButton1Click:Connect(function() _kx0x8O0U2:Destroy() end)
+local _Ru7v7n7S1y0g6 = Instance.new((string.char(70,114,97,109,101)), _vS5E5F9N6r1)
+_Ru7v7n7S1y0g6.Size                   = UDim2.new(1, -16, 0, 44)
+_Ru7v7n7S1y0g6.Position               = UDim2.new(0, 8, 0, 56)
+for _gP1L0x1=1,2 do local _DU3C2a6=_gP1L0x1*7 end
+_Ru7v7n7S1y0g6.BackgroundColor3       = _Xk3N3Z7b1q5
+if 7==0 then local _Ro4p2J2=1 else local _SY1f8u7=2 end
+_Ru7v7n7S1y0g6.BackgroundTransparency = 0.45
+_Ru7v7n7S1y0g6.ZIndex                 = 2
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _Ru7v7n7S1y0g6).CornerRadius = UDim.new(0, 10)
+local _oK6w0O0k0 = Instance.new((string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101)), _Ru7v7n7S1y0g6)
+_oK6w0O0k0.Size                   = UDim2.new(1, -8, 1, -8)
+_oK6w0O0k0.Position               = UDim2.new(0, 4, 0, 4)
+_oK6w0O0k0.BackgroundTransparency = 1
+_oK6w0O0k0.ScrollBarThickness     = 0
+_oK6w0O0k0.ScrollingDirection     = Enum.ScrollingDirection.X
+_oK6w0O0k0.AutomaticCanvasSize    = Enum.AutomaticSize.X
+for _ab8G9W7=1,1 do local _tM6c5S7=_ab8G9W7*5 end
+for _Te1m6B0=1,1 do local _SY2Y4T0=_Te1m6B0*7 end
+_oK6w0O0k0.CanvasSize             = UDim2.new()
+local _jw9z7D8g8 = Instance.new((string.char(85,73,76,105,115,116,76,97,121,111,117,116)), _oK6w0O0k0)
+for _Gl9g0b6=1,3 do local _sT3X4k5=_Gl9g0b6*7 end
+_jw9z7D8g8.FillDirection     = Enum.FillDirection.Horizontal
+local _zr0r5w1=(24+34);
+_jw9z7D8g8.Padding           = UDim.new(0, 6)
+_jw9z7D8g8.SortOrder         = Enum.SortOrder.LayoutOrder
+_jw9z7D8g8.VerticalAlignment = Enum.VerticalAlignment.Center
+if false then local _tE6O1W4=nil end
+local _gz8p2W3B5N1 = Instance.new((string.char(70,114,97,109,101)), _vS5E5F9N6r1)
+_gz8p2W3B5N1.Size                   = UDim2.new(1, -16, 1, -112)
+_gz8p2W3B5N1.Position               = UDim2.new(0, 8, 0, 104)
+_gz8p2W3B5N1.BackgroundTransparency = 1
+_gz8p2W3B5N1.ClipsDescendants       = true
+_gz8p2W3B5N1.ZIndex                 = 2
+local _Oe7t8b2={1,20,12};
+local function _UI2q6Z1()
+local _SO1q0o8Y9m5 = Instance.new((string.char(70,114,97,109,101)), _gz8p2W3B5N1)
+_SO1q0o8Y9m5.Size                   = UDim2.new(1, 0, 1, 0)
+_SO1q0o8Y9m5.BackgroundTransparency = 1
+_SO1q0o8Y9m5.Visible                = false
+local _Gq8p9i8T7c6 = Instance.new((string.char(84,101,120,116,66,111,120)), _SO1q0o8Y9m5)
+local _GZ7x5V6={64,84,74};
+_Gq8p9i8T7c6.Size                   = UDim2.new(1, -24, 0, 38)
+_Gq8p9i8T7c6.Position               = UDim2.new(0, 12, 0, 6)
+_Gq8p9i8T7c6.BackgroundColor3       = _BT4U6M1
+_Gq8p9i8T7c6.BackgroundTransparency = 0.55
+_Gq8p9i8T7c6.PlaceholderText        = (string.char(55357,56589,32,83,101,97,114,99,104,32,115,99,114,105,112,116,46,46,46))
+_Gq8p9i8T7c6.PlaceholderColor3      = Color3.fromRGB(160, 190, 210)
+local _mW2V9x0=2466;
+_Gq8p9i8T7c6.Text                   = ("")
+_Gq8p9i8T7c6.TextColor3             = Color3.fromRGB(255, 255, 255)
+local _Vi6V1G4=(42+10);
+_Gq8p9i8T7c6.TextSize               = 13
+_Gq8p9i8T7c6.Font                   = Enum.Font.GothamSemibold
+_Gq8p9i8T7c6.ClearTextOnFocus       = false
+if false then local _nL3F1w4=nil end
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _Gq8p9i8T7c6).CornerRadius = UDim.new(0, 10)
+local _gO9C8i6N8 = Instance.new((string.char(85,73,83,116,114,111,107,101)), _Gq8p9i8T7c6)
+_gO9C8i6N8.Color        = _Lc0h9t0
+_gO9C8i6N8.Thickness    = 1
+_gO9C8i6N8.Transparency = 0.6
+local _Sa7e3i6k6 = Instance.new((string.char(84,101,120,116,76,97,98,101,108)), _SO1q0o8Y9m5)
+_Sa7e3i6k6.Size                   = UDim2.new(1, -24, 0, 16)
+_Sa7e3i6k6.Position               = UDim2.new(0, 12, 0, 50)
+_Sa7e3i6k6.BackgroundTransparency = 1
+_Sa7e3i6k6.Text                   = (string.char(10060,32,78,79,32,75,69,89,32,82,69,81,85,73,82,69,68,32,124,32,66,82,65,75,89,79,32,72,85,66))
+local _Uy4C2D3=4111;
+_Sa7e3i6k6.TextColor3             = _Lc0h9t0
+_Sa7e3i6k6.TextSize               = 10
+_Sa7e3i6k6.Font                   = Enum.Font.GothamBold
+local _Nq1z5t7=2268;
+_Sa7e3i6k6.TextXAlignment         = Enum.TextXAlignment.Left
+local _eA5o0d6j4 = Instance.new((string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101)), _SO1q0o8Y9m5)
+_eA5o0d6j4.Size                   = UDim2.new(1, -16, 1, -78)
+_eA5o0d6j4.Position               = UDim2.new(0, 8, 0, 70)
+_eA5o0d6j4.BackgroundTransparency = 1
+_eA5o0d6j4.ScrollBarThickness     = 3
+_eA5o0d6j4.ScrollBarImageColor3   = _Lc0h9t0
+_eA5o0d6j4.AutomaticCanvasSize    = Enum.AutomaticSize.Y
+_eA5o0d6j4.CanvasSize             = UDim2.new()
+local _pk5k5L8I2U0 = Instance.new((string.char(85,73,76,105,115,116,76,97,121,111,117,116)), _eA5o0d6j4)
+_pk5k5L8I2U0.Padding             = UDim.new(0, 8)
+_pk5k5L8I2U0.HorizontalAlignment = Enum.HorizontalAlignment.Center
+local _at0h7u6={28,15,75};
+local _nt9l0s6P3B4 = {}
+_Gq8p9i8T7c6:GetPropertyChangedSignal((string.char(84,101,120,116))):Connect(function()
+local _io1t4l8o2 = _Gq8p9i8T7c6.Text:lower()
+for _BN4V2S4a2A8, _Vy2j5H6A2b6U8 in ipairs(_nt9l0s6P3B4) do
+_Vy2j5H6A2b6U8.Button.Visible = (_io1t4l8o2 == ("")) or (_Vy2j5H6A2b6U8.Name:find(_io1t4l8o2, 1, true) ~= nil)
+end
+end)
+return _SO1q0o8Y9m5, _eA5o0d6j4, _nt9l0s6P3B4
+end
+local _Jr4r3s6E7, _tv6M6s6, _dg5L4p5 = {}, {}, {}
+for _dK5x7f1t3K7 = 1, 6 do
+local _gq1P5p5Y2, _Uy5e6Y5z2, _Vy2j5H6A2b6U8 = _UI2q6Z1()
+for _ZE9P7M6=1,3 do local _zb5U4Y9=_ZE9P7M6*6 end
+_Jr4r3s6E7[_dK5x7f1t3K7], _tv6M6s6[_dK5x7f1t3K7], _dg5L4p5[_dK5x7f1t3K7] = _gq1P5p5Y2, _Uy5e6Y5z2, _Vy2j5H6A2b6U8
+end
+_Jr4r3s6E7[1].Visible = true
+local _Pf2n8u9=2672;
+local function _Cn6R7L3S8z8(_hS6W6p3m4s7, _nt9l0s6P3B4, _LP3b8r7V6A0T2)
+if type(_LP3b8r7V6A0T2) ~= (string.char(116,97,98,108,101)) then return end
+for _BN4V2S4a2A8, _hB0g8r3X1y2 in ipairs(_LP3b8r7V6A0T2) do
+local _KP0g4B7={89,4,57};
+if _hB0g8r3X1y2.Name and _hB0g8r3X1y2.Url then
+local _my4h3I9=3118;
+for _AI8j1d7=1,2 do local _vj8B0Y2=_AI8j1d7*3 end
+local _Kg3v7a4i9 = Instance.new((string.char(84,101,120,116,66,117,116,116,111,110)), _hS6W6p3m4s7)
+_Kg3v7a4i9.Size                   = UDim2.new(1, -8, 0, 44)
+_Kg3v7a4i9.BackgroundColor3       = _BT4U6M1
+_Kg3v7a4i9.BackgroundTransparency = 0.55
+_Kg3v7a4i9.Text                   = ("")
+_Kg3v7a4i9.AutoButtonColor        = false
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _Kg3v7a4i9).CornerRadius = UDim.new(0, 10)
+local _Fb7R7l9 = Instance.new((string.char(85,73,83,116,114,111,107,101)), _Kg3v7a4i9)
+_Fb7R7l9.Color        = _Lc0h9t0
+_Fb7R7l9.Thickness    = 1
+_Fb7R7l9.Transparency = 0.65
+local _Dp4C8F7x4 = Instance.new((string.char(84,101,120,116,76,97,98,101,108)), _Kg3v7a4i9)
+_Dp4C8F7x4.Size                   = UDim2.new(1, -46, 1, 0)
+_Dp4C8F7x4.Position               = UDim2.new(0, 12, 0, 0)
+local _nz6K9y6={31,68,53};
+local _ZY9D1J1=(9+25);
+_Dp4C8F7x4.BackgroundTransparency = 1
+_Dp4C8F7x4.Text                   = _hB0g8r3X1y2.Name
+_Dp4C8F7x4.TextColor3             = Color3.fromRGB(255, 255, 255)
+_Dp4C8F7x4.TextSize               = 12
+if false then local _WQ7W3C7=nil end
+local _dV5G2q0={42,42,57};
+_Dp4C8F7x4.Font                   = Enum.Font.GothamSemibold
+local _jh4k0Z3=7021;
+_Dp4C8F7x4.TextXAlignment         = Enum.TextXAlignment.Left
+_Dp4C8F7x4.TextTruncate           = Enum.TextTruncate.AtEnd
+local _Ya0V8O2J1 = Instance.new((string.char(73,109,97,103,101,76,97,98,101,108)), _Kg3v7a4i9)
+_Ya0V8O2J1.Size                   = UDim2.fromOffset(22, 22)
+if 9==6 then local _Mk2p6G8=1 else local _Kd5A7o1=2 end
+_Ya0V8O2J1.Position               = UDim2.new(1, -34, 0.5, -11)
+_Ya0V8O2J1.BackgroundTransparency = 1
+_Ya0V8O2J1.Image                  = _SW4u4F9k1f7
+local _Fz7o3b5={87,80,1};
+for _pD5Y5d5=1,3 do local _pZ0v8A5=_pD5Y5d5*6 end
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _Ya0V8O2J1).CornerRadius = UDim.new(1, 0)
+local _LH5H7T0=(49+32);
+for _Kx4j3R4=1,2 do local _iV9Q7L8=_Kx4j3R4*3 end
+_Kg3v7a4i9.MouseEnter:Connect(function()
+_jO4G8s5y4:Create(_Kg3v7a4i9, TweenInfo.new(0.18), {
+BackgroundColor3       = Color3.fromRGB(0, 45, 60),
+BackgroundTransparency = 0.35,
+}):Play()
+_Fb7R7l9.Transparency = 0.2
+end)
+_Kg3v7a4i9.MouseLeave:Connect(function()
+_jO4G8s5y4:Create(_Kg3v7a4i9, TweenInfo.new(0.18), {
+BackgroundColor3       = _BT4U6M1,
+BackgroundTransparency = 0.55,
+}):Play()
+_Fb7R7l9.Transparency = 0.65
+end)
+_Kg3v7a4i9.MouseButton1Click:Connect(function()
+_Dp4C8F7x4.Text       = (string.char(9203,32,76,111,97,100,105,110,103,46,46,46))
+_Dp4C8F7x4.TextColor3 = _Lc0h9t0
+local _gN3c4k8s8w3d9, _Dh2T9A7R2e9o9 = pcall(function()
+loadstring(game:HttpGet(_hB0g8r3X1y2.Url))()
+end)
+if _gN3c4k8s8w3d9 then
+_Dp4C8F7x4.Text       = (string.char(9989,32,83,117,99,99,101,115,115))
+_Dp4C8F7x4.TextColor3 = Color3.fromRGB(90, 210, 130)
+else
+_Dp4C8F7x4.Text       = (string.char(10060,32,76,111,97,100,32,69,114,114,111,114))
+_Dp4C8F7x4.TextColor3 = Color3.fromRGB(255, 85, 95)
+warn((string.char(91,66,114,97,75,121,111,93,32)) .. tostring(_Dh2T9A7R2e9o9))
+end
+end)
+table.insert(_nt9l0s6P3B4, { Button = _Kg3v7a4i9, Name = _hB0g8r3X1y2.Name:lower() })
+if 1==1 then local _dt7o3D2=1 else local _zS6s1P3=2 end
+end
+end
+end
+task.spawn(function()
+local _gN3c4k8s8w3d9, _sc3u2a8U1k7 = pcall(function() return game:HttpGet(_mS9f0W8u0L5) end)
+if not _gN3c4k8s8w3d9 then return end
+local _ri9U2y6U6i4, _Cl3V0S6O8X3 = pcall(function() return _ey9I1r9x1P0x2:JSONDecode(_sc3u2a8U1k7) end)
+if not _ri9U2y6U6i4 or type(_Cl3V0S6O8X3) ~= (string.char(116,97,98,108,101)) then return end
+local function _Sm5c3A1(_Un6A6H0, _FI5R5b8p8G7E7, _go9R6g4X2) return _Cl3V0S6O8X3[_Un6A6H0] or _Cl3V0S6O8X3[_FI5R5b8p8G7E7] or (_go9R6g4X2 and _Cl3V0S6O8X3[_go9R6g4X2]) end
+local _tk5i6S7 = _Sm5c3A1((string.char(83,116,101,97,108,32,97,110,32,101,103,103)), (string.char(83,116,101,97,108,32,65,110,32,69,103,103)), (string.char(258,110,32,116,114,7897,109,32,109,7897,116,32,113,117,7843,32,116,114,7913,110,103)))
+if _tk5i6S7 then _Cn6R7L3S8z8(_tv6M6s6[1], _dg5L4p5[1], _tk5i6S7) end
+local _Yg7Z1w9 = _Sm5c3A1((string.char(66,114,101,97,107,32,97,110,100,32,115,116,101,97,108,32,97,110,32,101,103,103)), (string.char(66,114,101,97,107,32,65,110,100,32,83,116,101,97,108,32,65,110,32,69,103,103)), (string.char(272,7853,112,32,118,7905,32,118,224,32,259,110,32,116,114,7897,109,32,109,7897,116,32,113,117,7843,32,116,114,7913,110,103)))
+if _Yg7Z1w9 then _Cn6R7L3S8z8(_tv6M6s6[2], _dg5L4p5[2], _Yg7Z1w9) end
+local _zk5i8y0O2 = _Sm5c3A1((string.char(66,108,111,120,32,70,114,117,105,116)), (string.char(66,108,111,120,102,114,117,105,116)), (string.char(66,108,111,120,32,70,114,117,105,116,115)))
+if _zk5i8y0O2 then _Cn6R7L3S8z8(_tv6M6s6[3], _dg5L4p5[3], _zk5i8y0O2) end
+local _tN4y2L8f0 = _Sm5c3A1((string.char(77,77,50)), (string.char(77,117,114,100,101,114,32,77,121,115,116,101,114,121,32,50)))
+if _tN4y2L8f0 then _Cn6R7L3S8z8(_tv6M6s6[4], _dg5L4p5[4], _tN4y2L8f0) end
+local _Du8M3f0e4 = _Sm5c3A1((string.char(82,105,100,101,32,97,32,112,101,116,115)), (string.char(82,105,100,101,32,97,32,80,101,116,115)), (string.char(82,105,100,101,80,101,116,115)))
+if _Du8M3f0e4 then _Cn6R7L3S8z8(_tv6M6s6[5], _dg5L4p5[5], _Du8M3f0e4) end
+local _Ge3i6s7 = _Sm5c3A1((string.char(84,104,114,111,119,32,102,111,111,100,32,102,111,114,32,97,110,105,109,97,108,115)), (string.char(84,104,114,111,119,32,70,111,111,100,32,70,111,114,32,65,110,105,109,97,108,115)), (string.char(78,233,109,32,116,104,7913,99,32,259,110,32,99,104,111,32,273,7897,110,103,32,118,7853,116)))
+if _Ge3i6s7 then _Cn6R7L3S8z8(_tv6M6s6[6], _dg5L4p5[6], _Ge3i6s7) end
+end)
+local _QJ5c9d6 = _Jr4r3s6E7[1]
+local _py3X5A5u4O0  = {}
+local function _Vv2i7J0S3(_nZ7m1W7, _Pc0e3z6C8y0Y4)
+if _QJ5c9d6 == _nZ7m1W7 then return end
+_QJ5c9d6.Visible = false
+_nZ7m1W7.Visible  = true
+_nZ7m1W7.Position = UDim2.new(0, 24, 0, 0)
+_jO4G8s5y4:Create(
+_nZ7m1W7,
+TweenInfo.new(0.28, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+{ Position = UDim2.new(0, 0, 0, 0) }
+):Play()
+for _BN4V2S4a2A8, _FI5R5b8p8G7E7 in ipairs(_py3X5A5u4O0) do
+_jO4G8s5y4:Create(_FI5R5b8p8G7E7, TweenInfo.new(0.2), {
+BackgroundColor3       = _BT4U6M1,
+BackgroundTransparency = 0.55,
+}):Play()
+_FI5R5b8p8G7E7.TextColor3 = Color3.fromRGB(200, 220, 240)
+end
+if _Pc0e3z6C8y0Y4 then
+_jO4G8s5y4:Create(_Pc0e3z6C8y0Y4, TweenInfo.new(0.2), {
+BackgroundColor3       = _Lc0h9t0,
+BackgroundTransparency = 0.25,
+}):Play()
+local _Dk7o9d9=(11+46);
+_Pc0e3z6C8y0Y4.TextColor3 = Color3.fromRGB(255, 255, 255)
+end
+_QJ5c9d6 = _nZ7m1W7
+end
+local function _Qd6q3L8v5L5(_Dp4C8F7x4, _SO1q0o8Y9m5, _NT9H4w7)
+local _Kg3v7a4i9 = Instance.new((string.char(84,101,120,116,66,117,116,116,111,110)), _oK6w0O0k0)
+_Kg3v7a4i9.Size                   = UDim2.fromOffset(0, 32)
+_Kg3v7a4i9.AutomaticSize          = Enum.AutomaticSize.X
+_Kg3v7a4i9.BackgroundColor3       = _NT9H4w7 and _Lc0h9t0 or _BT4U6M1
+_Kg3v7a4i9.BackgroundTransparency = _NT9H4w7 and 0.25 or 0.55
+_Kg3v7a4i9.Text                   = (string.char(32,32)) .. _Dp4C8F7x4 .. (string.char(32,32))
+_Kg3v7a4i9.TextColor3             = _NT9H4w7 and Color3.fromRGB(255, 255, 255)
+or Color3.fromRGB(200, 220, 240)
+_Kg3v7a4i9.TextSize               = 11
+_Kg3v7a4i9.Font                   = Enum.Font.GothamBold
+for _ER1d2t6=1,1 do local _Ws2u5i3=_ER1d2t6*0 end
+_Kg3v7a4i9.AutoButtonColor        = false
+Instance.new((string.char(85,73,67,111,114,110,101,114)), _Kg3v7a4i9).CornerRadius = UDim.new(0, 8)
+_Kg3v7a4i9.MouseButton1Click:Connect(function() _Vv2i7J0S3(_SO1q0o8Y9m5, _Kg3v7a4i9) end)
+table.insert(_py3X5A5u4O0, _Kg3v7a4i9)
+return _Kg3v7a4i9
+end
+_Qd6q3L8v5L5((string.char(55358,56666,32,83,116,101,97,108,32,69,103,103)),     _Jr4r3s6E7[1], true)
+_Qd6q3L8v5L5((string.char(55358,56666,32,66,114,101,97,107,32,38,32,83,116,101,97,108)), _Jr4r3s6E7[2], false)
+_Qd6q3L8v5L5((string.char(55356,57162,32,66,108,111,120,32,70,114,117,105,116)),    _Jr4r3s6E7[3], false)
+_Qd6q3L8v5L5((string.char(55357,56618,32,77,77,50)),           _Jr4r3s6E7[4], false)
+_Qd6q3L8v5L5((string.char(55357,56382,32,82,105,100,101,32,80,101,116,115)),     _Jr4r3s6E7[5], false)
+local _dW0z8H8=(1+24);
+if 2==8 then local _dC6w0t4=1 else local _sz7E0l7=2 end
+_Qd6q3L8v5L5((string.char(55356,57174,32,84,104,114,111,119,32,70,111,111,100)),    _Jr4r3s6E7[6], false)
+local _In5c6L6=1577;
+local _rb0w0n6B2f8i2  = false
+local _dQ4J4y1o1R2W5 = Vector2.new()
+local _pf0b1N4  = UDim2.new()
+local _Es5Z2v0={4,56,76};
+_Qp3v5D2H1e4.InputBegan:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseButton1
+or input.UserInputType == Enum.UserInputType.Touch then
+_rb0w0n6B2f8i2  = true
+_dQ4J4y1o1R2W5 = input.Position
+_pf0b1N4  = _vS5E5F9N6r1.Position
+input.Changed:Connect(function()
+if input.UserInputState == Enum.UserInputState.End then
+_rb0w0n6B2f8i2 = false
+end
+end)
+end
+end)
+_it5z9j2q6h8.InputChanged:Connect(function(input)
+if _rb0w0n6B2f8i2 and (input.UserInputType == Enum.UserInputType.MouseMovement
+or input.UserInputType == Enum.UserInputType.Touch) then
+local _oV3i3v6k5D9 = input.Position - _dQ4J4y1o1R2W5
+_vS5E5F9N6r1.Position = UDim2.new(
+_pf0b1N4.X.Scale, _pf0b1N4.X.Offset + _oV3i3v6k5D9.X,
+_pf0b1N4.Y.Scale, _pf0b1N4.Y.Offset + _oV3i3v6k5D9.Y
+)
+end
+end)
+print((string.char(91,66,114,97,75,121,111,93,32,72,117,98,32,108,111,97,100,101,100,32,8212,32,69,120,101,99,117,116,111,114,32,109,111,100,101)))
