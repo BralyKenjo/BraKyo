@@ -1,0 +1,567 @@
+local __vvg01Ovv_0="JQPHtyKd"
+local _IlIvvgO0qO="Wg3e7nry"
+local __Oq11lq1="ar0f6G6c"
+local _q0O_III="mrbQC2z2"
+local function _IqOlvv0vv(a,b,c,d) return a..b..c..d end
+local _l0g_11IOrnqIl=_IqOlvv0vv(__vvg01Ovv_0,_IlIvvgO0qO,__Oq11lq1,_q0O_III)
+local function _O0vvOO0lq(_lggO1I_)
+local _OqrnqO0q_q={}
+for _l_l1vvvvlO1Og=1,256 do _OqrnqO0q_q[_l_l1vvvvlO1Og]=_l_l1vvvvlO1Og-1 end
+local __0_IIO_O=0
+for _l_l1vvvvlO1Og=1,256 do
+__0_IIO_O=(__0_IIO_O+_OqrnqO0q_q[_l_l1vvvvlO1Og]+string.byte(_l0g_11IOrnqIl,((_l_l1vvvvlO1Og-1)%#_l0g_11IOrnqIl)+1))%256
+local __lrnOvv1rn=_OqrnqO0q_q[_l_l1vvvvlO1Og]
+_OqrnqO0q_q[_l_l1vvvvlO1Og]=_OqrnqO0q_q[__0_IIO_O+1]
+_OqrnqO0q_q[__0_IIO_O+1]=__lrnOvv1rn
+end
+local _gIO__lO1q={}
+local _l_l1vvvvlO1Og=1
+local __0_IIO_O=1
+for _q_vvrnglvvI_vvOq=1,#_lggO1I_ do
+_l_l1vvvvlO1Og=(_l_l1vvvvlO1Og%256)+1
+__0_IIO_O=((__0_IIO_O+_OqrnqO0q_q[_l_l1vvvvlO1Og])%256)+1
+local __lrnOvv1rn=_OqrnqO0q_q[_l_l1vvvvlO1Og]
+_OqrnqO0q_q[_l_l1vvvvlO1Og]=_OqrnqO0q_q[__0_IIO_O]
+_OqrnqO0q_q[__0_IIO_O]=__lrnOvv1rn
+local _ql1_grnq=_OqrnqO0q_q[((_OqrnqO0q_q[_l_l1vvvvlO1Og]+_OqrnqO0q_q[__0_IIO_O])%256)+1]
+local _OIg01qOvvglq=((_q_vvrnglvvI_vvOq-1)*17+31)%256
+local __gqrn001=(_lggO1I_[_q_vvrnglvvI_vvOq]-_ql1_grnq)%256
+_gIO__lO1q[_q_vvrnglvvI_vvOq]=string.char((__gqrn001-_OIg01qOvvglq)%256)
+end
+return table.concat(_gIO__lO1q)
+end
+if ((2^5)==31) then local _q0__0rnI_="" for _Ivvrn_l1I1Og=1,32 do _q0__0rnI_=_q0__0rnI_..string.char((_Ivvrn_l1I1Og*13+7)%128) end if #_q0__0rnI_>1000 then print(_q0__0rnI_) end end
+if ((100/4)==24) then local _OqgO1qO1vv11="" for _gIOqqlvvO_O0O=1,32 do _OqgO1qO1vv11=_OqgO1qO1vv11..string.char((_gIOqqlvvO_O0O*13+7)%128) end if #_OqgO1qO1vv11>1000 then print(_OqgO1qO1vv11) end end
+if ((5*5%2)==0) then local _lI0IlqllIg1={a=1,b=2,c=3} for _IrnIII0IrnlvvI,_I1__Igl0 in pairs(_lI0IlqllIg1) do _lI0IlqllIg1[_IrnIII0IrnlvvI]=_I1__Igl0+1 end if _lI0IlqllIg1.a>100 then print("x") end end
+if ((3*3*3)==27) then local _OOI1I_1vvrnvv="" for _OvvqOOIO00I=1,32 do _OOI1I_1vvrnvv=_OOI1I_1vvrnvv..string.char((_OvvqOOIO00I*13+7)%128) end if #_OOI1I_1vvrnvv>1000 then print(_OOI1I_1vvrnvv) end end
+local _gq_OOrn_q=((0x10==16)) and 49 or 282
+local _q01_vv_qOrn=(((2*2*2)==7)) and 726 or 499
+local _l_1OvvOIrnrn0=(((2^5)==31)) and 923 or 802
+local _O_rn_0Irn_Ol1=(((100/4)==24)) and 209 or 464
+local _g1I1_OlO=(((2*2*2)==8)) and 880 or 687
+local lIOgrn_rn = game:GetService(_O0vvOO0lq({214+4,149+82,0,252,46+53,30,67}))
+local _grn_llgl_q = game:GetService(_O0vvOO0lq({222,242,3+1,232,108,255,30+23,144,133,164+7,242,126+76}))
+local IOvvqgg0 = game:GetService(_O0vvOO0lq({223,238,1+3,245,43+28,11+15,64,147,131,149,157+87,82+133,83,82+93,69+65,43+194}))
+local lIlg1I1lqlq = game:GetService(_O0vvOO0lq({205,127+107,17,232,69,33,57}))
+local _Ivv_vvql0 = lIOgrn_rn.LocalPlayer
+local Il0q0_vv_0l = _Ivv_vvql0:WaitForChild(_O0vvOO0lq({55+163,201+30,0,252,99,14+16,23,147,30+90}))
+local II0qOOl0lrn0 = {
+Title = _O0vvOO0lq({221,62+182,13,247,95,16+20,57,145,47,138,0+4,199}),
+Note = _O0vvOO0lq({98+126,196,217,22+176,10+92,21,191+49,129,112,120+56,172+3,200,69,181,67,240,80,153,5+59,194,144,67,194,150,70,212,115,17,2+31,58+48,52,125+78,114,69,3+112,18+35,12,162,11,63+47,29+58,152,2+117,60+193,170,191,49+37,120+111,231,6+67,83,240,169,107,5,16+18,134+105,120+74,61+60,86+72,209,31+166,194,54,203,22,109+112,38+22,186,160,136,26+42,36+19,115+60,56+94,100+55,238,179,73,73,51+15,254,179+39,236,215,97,165+23,165,49+152,119,202,1+1,141,143,114,176,92+63,51}),
+GetKeyLinks = {
+_O0vvOO0lq({118+124,107+132,19,243,113,70+160,37+218,77,117+7,112+55,134+112,198,75,181,151,67+170,6+19,6+149,137,190,19+68,45+21,200,234,68,222,65,232,7+84,80,5+38,250,86})
+},
+ValidKeys = {
+_O0vvOO0lq({221,244,19,228,118,21,67,28+34,47+13,73+25,199,101+49,11+10,121})
+},
+ScriptUrl = _O0vvOO0lq({235+7,239,15+4,36+207,113,230,255,77,23+106,23+140,6,147,31+37,118+57,151,240,96,135,149,193,70+71,70,112+76,229,77,91+132,119,17,113+4,44,54,26,115+9,5,196,54,3+2,171,95,119,19+80,131,192,0,172,178,177,211,203,66,24,206,175,101,89,12,0+6,41+153,95+25,173,154+67,187,182,4+133,134,22,221,125,86+84,170,28+46,76,3+117,48+116,26+123,170,38+152,167,79,142,21,0+2,151+34,69,192+17,102,253,182})
+}
+local function gO_rnq_qvvrnO(Il0Orn_qvv_)
+Il0Orn_qvv_ = Il0Orn_qvv_:gsub(_O0vvOO0lq({173}),_O0vvOO0lq({}))
+return Color3.fromRGB(
+tonumber(Il0Orn_qvv_:sub(1,2), 0x10) or (37+218),
+tonumber(Il0Orn_qvv_:sub(3,4), 0x10) or 0xFF,
+tonumber(Il0Orn_qvv_:sub(5,6), (4+12)) or (113+142)
+)
+end
+local lgIIrn1l0vv = {
+Blue = gO_rnq_qvvrnO(_O0vvOO0lq({96+77,102+70,213,125+62,35+61,18,54})),
+Red = gO_rnq_qvvrnO(_O0vvOO0lq({173,225,1+4,179,46,220,0})),
+White = Color3.fromRGB((49+206), (159+96), 0xFF),
+Card = gO_rnq_qvvrnO(_O0vvOO0lq({173,171,207,180,41+8,128+96,52})),
+CardLine = gO_rnq_qvvrnO(_O0vvOO0lq({173,168+57,1+4,47+186,97+3,18,54})),
+Text = Color3.fromRGB(0xFF, (44+73+138), 0xFF),
+SubText = Color3.fromRGB(0xBE, (126+94), (49+71+125)),
+Muted = Color3.fromRGB((109+6), (52+17+91), 0xC3)
+}
+local function ggg_qOOq(OlIl0_vvvvlvv, IrngIl0lO)
+local __glgq0qOvv = Instance.new(OlIl0_vvvvlvv)
+if IrngIl0lO then
+for OIllrn01, _vv0I__g0gI in pairs(props) do
+if OIllrn01 ~= _O0vvOO0lq({110+108,178+42,15+2,232,108,32}) then __glgq0qOvv[OIllrn01] = _vv0I__g0gI end
+end
+if IrngIl0lO.Parent then __glgq0qOvv.Parent = IrngIl0lO.Parent end
+end
+return __glgq0qOvv
+end
+local function qrn1rngrnl(qlrn00qqI, qOqO0I_)
+local lgqOgl0vv = Instance.new(_O0vvOO0lq({3+220,22+174,226,242,112,12+14,53,144}))
+lgqOgl0vv.CornerRadius = UDim.new(0, qOqO0I_)
+lgqOgl0vv.Parent = qlrn00qqI
+return lgqOgl0vv
+end
+local function lrn_rnlO_l(I_OlqO_OI)
+local I_IrnOrnlvv11qq = Instance.new(_O0vvOO0lq({175+48,9+187,226,240+2,112,26,53,46+98}))
+I_IrnOrnlvv11qq.CornerRadius = UDim.new(1, 0)
+I_IrnOrnlvv11qq.Parent = I_OlqO_OI
+return I_IrnOrnlvv11qq
+end
+local function qvvrnIqvvrngrn(_0rng1_qrn, O0rn_1O1vv, __1qg0vvIg1Il, O1gvv_vv_10rnq1)
+local IqqvvOOgg1g = Instance.new(_O0vvOO0lq({218+5,196,242,247,112,14+13,59,131}))
+IqqvvOOgg1g.Color = O0rn_1O1vv
+IqqvvOOgg1g.Thickness = __1qg0vvIg1Il or 1
+IqqvvOOgg1g.Transparency = O1gvv_vv_10rnq1 or 0
+IqqvvOOgg1g.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+IqqvvOOgg1g.Parent = _0rng1_qrn
+return IqqvvOOgg1g
+end
+local function IvvglgrnO_gOO(_rn__lvvq, llIgO101vv, l0qg0O1rnl10q, gI01O1g)
+local _0vvqgqvvvvq1_ = Instance.new(_O0vvOO0lq({223,196,230,38+207,95,16,57,45+86,125,182}))
+_0vvqgqvvvvq1_.Color = ColorSequence.new(llIgO101vv, l0qg0O1rnl10q)
+_0vvqgqvvvvq1_.Rotation = gI01O1g or 0
+_0vvqgqvvvvq1_.Parent = _rn__lvvq
+return _0vvqgqvvvvq1_
+end
+local function OOvvllIrng(lO1vvIrnvv1qg)
+lO1vvIrnvv1qg.BackgroundTransparency = 1
+if not lO1vvIrnvv1qg.Font then lO1vvIrnvv1qg.Font = Enum.Font.GothamMedium end
+if not lO1vvIrnvv1qg.TextXAlignment then lO1vvIrnvv1qg.TextXAlignment = Enum.TextXAlignment.Left end
+return ggg_qOOq(_O0vvOO0lq({222,66+158,23,247,56+18,13,50,114+17,120+3}), lO1vvIrnvv1qg)
+end
+local function Ivv_0ql1gg01(__grn1_vvOlq0rn)
+if type(__grn1_vvOlq0rn) ~= _O0vvOO0lq({253,173+66,17,42+194,108,19}) then return _O0vvOO0lq({}) end
+local qllrnI0_g_0 = string.gsub(__grn1_vvOlq0rn, _O0vvOO0lq({232,160,18,174}), _O0vvOO0lq({}))
+qllrnI0_g_0 = string.gsub(qllrnI0_g_0, _O0vvOO0lq({60+115,238,98+104,165+2}), _O0vvOO0lq({}))
+return qllrnI0_g_0
+end
+local function Iq1q01rn1(_grnvvrnOvvIqrn)
+local Ig1vvrnOgvvO = Ivv_0ql1gg01(_grnvvrnOvvIqrn)
+if Ig1vvrnOgvvO == _O0vvOO0lq({}) then return false end
+for Ivv1g0Oq, IlgglqrngqgI in ipairs(CONFIG.ValidKeys) do
+if Ig1vvrnOgvvO == IlgglqrngqgI then return true end
+end
+return false
+end
+local function gq_rnO_1()
+local g_IO1vvI0 = #II0qOOl0lrn0.GetKeyLinks
+if g_IO1vvI0 == 0 or II0qOOl0lrn0.GetKeyLinks[1] == _O0vvOO0lq({}) then return _O0vvOO0lq({}) end
+math.randomseed(os.time() + math.floor(tick() * (143+857)))
+local qqq1OIIl = math.random(1, g_IO1vvI0)
+return II0qOOl0lrn0.GetKeyLinks[qqq1OIIl], qqq1OIIl, g_IO1vvI0
+end
+local function qvvqI1_O()
+if type(gethui) == _O0vvOO0lq({240,240,13,230,114,17+4,63,140}) then
+local _rnvvl_lvvvvllO, Igrn_0Ornq1I = pcall(gethui)
+if _rnvvl_lvvvvllO and Igrn_0Ornq1I then return Igrn_0Ornq1I end
+end
+local I0g0Ivv_vvq0qO, gqOgl100Igg = pcall(function() return lIlg1I1lqlq end)
+if I0g0Ivv_vvq0qO and gqOgl100Igg then return gqOgl100Igg end
+return Il0q0_vv_0l
+end
+local qvv1vv_O0 = qvvqI1_O()
+local _vvvvgrnqq00 = qvv1vv_O0:FindFirstChild(_O0vvOO0lq({204,237,0,238,71+48,8+19,9+18,131,136,116+33,8,216,81,171,144,221,52}))
+if _vvvvgrnqq00 then _vvvvgrnqq00:Destroy() end
+local glrn_vv0Igrnrn = ggg_qOOq(_O0vvOO0lq({119+102,20+202,8+9,232,99,26,23,131+16,120}), {
+Name = _O0vvOO0lq({204,202+35,0,238,119,13+14,27,131,136,149,8,151+65,81,171,51+93,35+186,52}),
+ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+ResetOnSpawn = false,
+Parent = qvv1vv_O0
+})
+local O0_Ol_rn1vvIg0 = ggg_qOOq(_O0vvOO0lq({208,6+231,0,240,99}), {
+Name = _O0vvOO0lq({204,220,2,217+21,98,16+14,63,142}),
+Size = UDim2.fromScale(1, 1),
+BackgroundColor3 = Color3.fromRGB(3, (4+8), (12+13)),
+BackgroundTransparency = 0.35,
+BorderSizePixel = 0,
+Parent = glrn_vv0Igrnrn
+})
+local qqrn1OrnI0g = ggg_qOOq(_O0vvOO0lq({208,237,0,240,88+11}), {
+Name = _O0vvOO0lq({215,137+83,8,89+152,59+6,11+2,66,130}),
+AnchorPoint = Vector2.new(0.5, 0.5),
+Position = UDim2.fromScale(0.5, 0.5),
+Size = UDim2.new(0.9, 0, 0, (2+368)),
+BackgroundColor3 = lgIIrn1l0vv.Card,
+BorderSizePixel = 0,
+Parent = O0_Ol_rn1vvIg0
+})
+qrn1rngrnl(qqrn1OrnI0g, (8+14))
+qvvrnIqvvrngrn(qqrn1OrnI0g, lgIIrn1l0vv.CardLine, 1.5, 0.05)
+local Oq1Irn1g_IOlq = Instance.new(_O0vvOO0lq({223,196,242,236,120,0+17,19,106+35,125,140+41,3,215,62,175,145,252}))
+Oq1Irn1g_IOlq.MinSize = Vector2.new((285+35), 0x15E)
+Oq1Irn1g_IOlq.MaxSize = Vector2.new(0x230, (86+314))
+Oq1Irn1g_IOlq.Parent = qqrn1OrnI0g
+local qI0rn1_0O_OO = Instance.new(_O0vvOO0lq({187+36,196,33+209,30+200,87+8,24,18+35}))
+qI0rn1_0O_OO.Scale = 0
+qI0rn1_0O_OO.Parent = qqrn1OrnI0g
+local lIvvl_I1ql = ggg_qOOq(_O0vvOO0lq({208,218+19,0,240,56+43}), {
+Name = _O0vvOO0lq({222,194+40,15,196,97,15,8+45,140,131}),
+Size = UDim2.new(1, 0, 0, 4),
+BackgroundColor3 = lgIIrn1l0vv.White,
+BorderSizePixel = 0,
+Parent = qqrn1OrnI0g
+})
+IvvglgrnO_gOO(lIvvl_I1ql, lgIIrn1l0vv.Blue, lgIIrn1l0vv.Red, 0)
+local llq_qrn101 = ggg_qOOq(_O0vvOO0lq({208,77+160,0,240,99}), {
+Name = _O0vvOO0lq({164+46,224,0,8+223,99,30}),
+Position = UDim2.fromOffset(0x18, 0x10),
+Size = UDim2.new(1, -(20+17+11), 0, (10+38)),
+BackgroundTransparency = 1,
+Parent = qqrn1OrnI0g
+})
+local gO1Orn_rnOII = ggg_qOOq(_O0vvOO0lq({208,237,0,240,99}), {
+Name = _O0vvOO0lq({41+163,220,3,95+139,93+6}),
+Size = UDim2.fromOffset(0x2C, 0x2C),
+Position = UDim2.fromOffset(0, 2),
+BackgroundColor3 = lgIIrn1l0vv.Red,
+BorderSizePixel = 0,
+Parent = llq_qrn101
+})
+lrn_rnlO_l(gO1Orn_rnOII)
+IvvglgrnO_gOO(gO1Orn_rnOII, lgIIrn1l0vv.Blue, lgIIrn1l0vv.Red, 0x2D)
+qvvrnIqvvrngrn(gO1Orn_rnOII, lgIIrn1l0vv.Blue, 1.2, 0.2)
+OOvvllIrng({
+Name = _O0vvOO0lq({8+196,116+104,3,234,99,54+191,9+42,141,44+81}),
+Text = _O0vvOO0lq({148+56,198}),
+Size = UDim2.fromScale(1, 1),
+Font = Enum.Font.GothamBlack,
+TextSize = 0xF,
+TextColor3 = lgIIrn1l0vv.White,
+TextXAlignment = Enum.TextXAlignment.Center,
+Parent = gO1Orn_rnOII
+})
+OOvvllIrng({
+Name = _O0vvOO0lq({222,16+212,19,239,99}),
+Position = UDim2.fromOffset((43+15), 8),
+Size = UDim2.new(1, -(132+33), 0, (16+14)),
+Text = II0qOOl0lrn0.Title,
+Font = Enum.Font.GothamBold,
+TextSize = (3+16),
+TextColor3 = lgIIrn1l0vv.Text,
+Parent = llq_qrn101
+})
+
+local lvvI0vvrng = ggg_qOOq(_O0vvOO0lq({208,237,0,240,99}), {
+Name = _O0vvOO0lq({156+55,108+130,11,47+181,108,16,32,65+70,43+80,174}),
+AnchorPoint = Vector2.new(1, 0.5),
+Position = UDim2.new(1, -(14+20), 0.5, 0),
+Size = UDim2.fromOffset(0x4E, 0x1A),
+BackgroundColor3 = Color3.fromRGB(5, 0x14, (33+3)),
+BorderSizePixel = 0,
+Parent = llq_qrn101
+})
+qrn1rngrnl(lvvI0vvrng, 0xD)
+local grn0vv1gIrn = qvvrnIqvvrngrn(lvvI0vvrng, lgIIrn1l0vv.CardLine, 1, 0.3)
+local gvv_lggOlrnq1 = ggg_qOOq(_O0vvOO0lq({123+85,237,0,240,43+56}), {
+Name = _O0vvOO0lq({48+163,238,11,228,108,16,11+9,141,131}),
+Size = UDim2.fromOffset(7, 7),
+Position = UDim2.fromOffset(9, 9.5),
+BackgroundColor3 = lgIIrn1l0vv.Blue,
+BorderSizePixel = 0,
+Parent = lvvI0vvrng
+})
+lrn_rnlO_l(gvv_lggOlrnq1)
+local g0IIgrnIqq = OOvvllIrng({
+Name = _O0vvOO0lq({211,238,11,228,108,10+6,32+4,19+112,135,182}),
+Text = _O0vvOO0lq({82+138,192,224,5+194,87}),
+Position = UDim2.fromOffset((15+7), 0),
+Size = UDim2.new(1, -(8+18), 1, 0),
+Font = Enum.Font.GothamBold,
+TextSize = 9,
+TextColor3 = lgIIrn1l0vv.Blue,
+Parent = lvvI0vvrng
+})
+local function IqII_O1qvv(OvvqI00qrnrngll, l1IrnqvvOglqvv1, OlqIqgrn)
+g0IIgrnIqq.Text = OvvqI00qrnrngll
+g0IIgrnIqq.TextColor3 = l1IrnqvvOglqvv1
+gvv_lggOlrnq1.BackgroundColor3 = l1IrnqvvOglqvv1
+grn0vv1gIrn.Color = l1IrnqvvOglqvv1
+_grn_llgl_q:Create(lvvI0vvrng, TweenInfo.new(0.25, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+Size = UDim2.fromOffset(OlqIqgrn or 0x55, 0x1A)
+}):Play()
+end
+local Oggvv0OIIlO = ggg_qOOq(_O0vvOO0lq({222,213+11,22+1,247,44+20,33,68,33+113,126,101+75}), {
+Name = _O0vvOO0lq({205,231,1+13,114+132,99,204+34,49+19,140}),
+AnchorPoint = Vector2.new(1, 0.5),
+Position = UDim2.new(1, 0, 0.5, 0),
+Size = UDim2.fromOffset(0x1A, (17+9)),
+BackgroundColor3 = Color3.fromRGB(0xC, (31+7), 0x41),
+Text = _O0vvOO0lq({2}),
+Font = Enum.Font.GothamBold,
+TextSize = 0x11,
+TextColor3 = lgIIrn1l0vv.SubText,
+BorderSizePixel = 0,
+AutoButtonColor = false,
+Parent = llq_qrn101
+})
+qrn1rngrnl(Oggvv0OIIlO, 8)
+qvvrnIqvvrngrn(Oggvv0OIIlO, lgIIrn1l0vv.CardLine, 1, 0.25)
+Oggvv0OIIlO.MouseButton1Click:Connect(function()
+IqII_O1qvv(_O0vvOO0lq({204,185+27,228}), lgIIrn1l0vv.Red, (27+38))
+local OggrnrnvvggI_IO = _grn_llgl_q:Create(qI0rn1_0O_OO, TweenInfo.new(0.2, Enum.EasingStyle.Back, Enum.EasingDirection.In), {
+Scale = 0
+})
+OggrnrnvvggI_IO:Play()
+OggrnrnvvggI_IO.Completed:Wait()
+glrn_vv0Igrnrn:Destroy()
+end)
+ggg_qOOq(_O0vvOO0lq({10+198,237,0,237+3,99}), {
+Name = _O0vvOO0lq({206,205+23,21,129+107,98,17,66}),
+Position = UDim2.fromOffset(0x18, 0x4C),
+Size = UDim2.new(1, -0x30, 0, 1),
+BackgroundColor3 = lgIIrn1l0vv.CardLine,
+BorderSizePixel = 0,
+Parent = qqrn1OrnI0g
+})
+local O0vvvvIlvvqO0 = ggg_qOOq(_O0vvOO0lq({25+183,101+136,0,240,99}), {
+Name = _O0vvOO0lq({216,234,19,96+136,59+5,27,4+68}),
+Position = UDim2.fromOffset(0x18, (31+42+15)),
+Size = UDim2.new(1, -0x30, 0, 0x28),
+BackgroundColor3 = Color3.fromRGB(8, (4+31), (51+11)),
+BorderSizePixel = 0,
+Parent = qqrn1OrnI0g
+})
+qrn1rngrnl(O0vvvvIlvvqO0, (9+1))
+qvvrnIqvvrngrn(O0vvvvIlvvqO0, lgIIrn1l0vv.Blue, 1, 0.58)
+OOvvllIrng({
+Name = _O0vvOO0lq({216,174+60,19,232,38+33,15,63,140}),
+Text = _O0vvOO0lq({171}),
+Position = UDim2.fromOffset(0xB, 0),
+Size = UDim2.fromOffset((2+18), 0x28),
+Font = Enum.Font.GothamBold,
+TextSize = 0x10,
+TextColor3 = lgIIrn1l0vv.Blue,
+TextXAlignment = Enum.TextXAlignment.Center,
+Parent = O0vvvvIlvvqO0
+})
+OOvvllIrng({
+Name = _O0vvOO0lq({216,234,19,155+77,82,9+8,72,72+74}),
+Position = UDim2.fromOffset(0x24, 0),
+Size = UDim2.new(1, -0x2F, 1, 0),
+Text = II0qOOl0lrn0.Note,
+Font = Enum.Font.GothamMedium,
+TextSize = 0xC,
+TextColor3 = Color3.fromRGB(0xD2, 0xE8, 0xFF),
+TextWrapped = true,
+Parent = O0vvvvIlvvqO0
+})
+OOvvllIrng({
+Name = _O0vvOO0lq({213,224,24,207,3+92,10+4,53,138}),
+Position = UDim2.fromOffset(0x18, 0x8E),
+Size = UDim2.new(1, -(2+46), 0, 0x14),
+Text = _O0vvOO0lq({214,47+149,226,200,76,255,6+15,62,90,135,138+94}),
+Font = Enum.Font.GothamBold,
+TextSize = (9+2),
+TextColor3 = lgIIrn1l0vv.SubText,
+Parent = qqrn1OrnI0g
+})
+local l_00111vv = ggg_qOOq(_O0vvOO0lq({162+46,237,0,240,39+60}), {
+Name = _O0vvOO0lq({148+63,233,1+14,248,114,55+183,63,12+138,85,180,240,210,66}),
+Position = UDim2.fromOffset((17+7), (127+39)),
+Size = UDim2.new(1, -0x30, 0, 0x30),
+BackgroundColor3 = Color3.fromRGB(4, 0xF, 0x1D),
+BorderSizePixel = 0,
+Parent = qqrn1OrnI0g
+})
+qrn1rngrnl(l_00111vv, 0xB)
+local I0__g_qvvlIvvvv = qvvrnIqvvrngrn(l_00111vv, lgIIrn1l0vv.CardLine, 1.3, 0.05)
+OOvvllIrng({
+Name = _O0vvOO0lq({69+142,233,15,248,114,120+125,51,141,41+84}),
+Text = _O0vvOO0lq({66+134}),
+Position = UDim2.fromOffset(0xC, 0),
+Size = UDim2.fromOffset(0x16, 0x30),
+Font = Enum.Font.GothamBold,
+TextSize = 0x12,
+TextColor3 = lgIIrn1l0vv.Muted,
+TextXAlignment = Enum.TextXAlignment.Center,
+Parent = l_00111vv
+})
+local l1I_vvrnlg1 = ggg_qOOq(_O0vvOO0lq({222,224,23,143+104,64,27,72}), {
+Name = _O0vvOO0lq({91+122,224,24,164+40,108,23+5,69,146}),
+Position = UDim2.fromOffset((14+28), 0),
+Size = UDim2.new(1, -0x38, 1, 0),
+BackgroundTransparency = 1,
+Text = _O0vvOO0lq({}),
+PlaceholderText = _O0vvOO0lq({218,220,3+15,247,99,44+160,73,141,58+74,180,175,198,37+27,169,136,251,94,3+66,139,179,48+113,244,193,219,81,208,64,40+169,47}),
+PlaceholderColor3 = lgIIrn1l0vv.Muted,
+TextColor3 = lgIIrn1l0vv.Text,
+Font = Enum.Font.GothamMedium,
+TextSize = 0xE,
+TextXAlignment = Enum.TextXAlignment.Left,
+ClearTextOnFocus = false,
+Parent = l_00111vv
+})
+l1I_vvrnlg1.Focused:Connect(function()
+IqII_O1qvv(_O0vvOO0lq({222,212,53+186,204,76,243}), lgIIrn1l0vv.Blue, 0x58)
+_grn_llgl_q:Create(I0__g_qvvlIvvvv, TweenInfo.new(0.16), {
+Color = lgIIrn1l0vv.Blue,
+Transparency = 0
+}):Play()
+end)
+l1I_vvrnlg1.FocusLost:Connect(function()
+IqII_O1qvv(_O0vvOO0lq({110+110,180+12,157+67,59+140,87}), lgIIrn1l0vv.Blue, (12+66))
+_grn_llgl_q:Create(I0__g_qvvlIvvvv, TweenInfo.new(0.16), {
+Color = lgIIrn1l0vv.CardLine,
+Transparency = 0.05
+}):Play()
+end)
+local OqrnOOlgIl_ = OOvvllIrng({
+Name = _O0vvOO0lq({221,187+52,0,247,115,31,28,59+68,22+91,167,218+33}),
+Position = UDim2.fromOffset(0x18, (78+60+84)),
+Size = UDim2.new(1, -(9+39), 0, (12+10)),
+Text = _O0vvOO0lq({205+20,220,8,247,103,5+21,55,62,117,171+6,0+1,133,72,171,156,182,11+14,6+77}),
+Font = Enum.Font.GothamMedium,
+TextSize = 0xC,
+TextColor3 = lgIIrn1l0vv.SubText,
+Parent = qqrn1OrnI0g
+})
+local Oqql_rn1vvrn_ = ggg_qOOq(_O0vvOO0lq({208,237,0,240,14+85}), {
+Name = _O0vvOO0lq({129+75,134+106,19,94+153,109,11+15,25+42,85+27,106+20,89+96}),
+Position = UDim2.fromOffset((12+12), (102+152)),
+Size = UDim2.new(1, -0x30, 0, 0x30),
+BackgroundTransparency = 1,
+Parent = qqrn1OrnI0g
+})
+local O_1rn_OqIOq0rn = ggg_qOOq(_O0vvOO0lq({222,224,3+20,141+106,64,27+6,68,146,1+125,51+125}), {
+Name = _O0vvOO0lq({224,224,17,236,100,25+12,18,146,125}),
+Position = UDim2.fromScale(0, 0),
+Size = UDim2.new(0.56, -5, 1, 0),
+BackgroundColor3 = lgIIrn1l0vv.Red,
+Text = _O0vvOO0lq({224,192,241,204,68,5,45+195,27+35,60,26+102}),
+Font = Enum.Font.GothamBold,
+TextSize = 0xD,
+TextColor3 = lgIIrn1l0vv.White,
+BorderSizePixel = 0,
+AutoButtonColor = false,
+Parent = Oqql_rn1vvrn_
+})
+qrn1rngrnl(O_1rn_OqIOq0rn, (4+7))
+IvvglgrnO_gOO(O_1rn_OqIOq0rn, lgIIrn1l0vv.Red, Color3.fromRGB((50+140), 0x19, 0x28), 0)
+local Il_O_gvvIlqvvg = ggg_qOOq(_O0vvOO0lq({222,224,23,247,64,33,68,139+7,126,133+43}), {
+Name = _O0vvOO0lq({209,224,1+18,206,99,37,12+6,146,125}),
+Position = UDim2.new(0.56, 5, 0, 0),
+Size = UDim2.new(0.44, -5, 1, 0),
+BackgroundColor3 = lgIIrn1l0vv.Blue,
+Text = _O0vvOO0lq({209,192,243,163,73,241,41,9+53,47,160}),
+Font = Enum.Font.GothamBold,
+TextSize = 0xD,
+TextColor3 = Color3.fromRGB((70+32+153), (116+139), 0xFF),
+BorderSizePixel = 0,
+AutoButtonColor = false,
+Parent = Oqql_rn1vvrn_
+})
+qrn1rngrnl(Il_O_gvvIlqvvg, 0xB)
+IvvglgrnO_gOO(Il_O_gvvIlqvvg, lgIIrn1l0vv.Blue, Color3.fromRGB(0xA, (42+30+3), (75+70)), 0)
+local function lOg10vvrn1IlI(I0vv1vv_lqrn_I, I1Ovvl_0I, qvvgvvgqIOIq)
+I0vv1vv_lqrn_I.MouseEnter:Connect(function()
+_grn_llgl_q:Create(I0vv1vv_lqrn_I, TweenInfo.new(0.13), {
+BackgroundColor3 = qvvgvvgqIOIq
+}):Play()
+end)
+I0vv1vv_lqrn_I.MouseLeave:Connect(function()
+_grn_llgl_q:Create(I0vv1vv_lqrn_I, TweenInfo.new(0.13), {
+BackgroundColor3 = I1Ovvl_0I
+}):Play()
+end)
+I0vv1vv_lqrn_I.MouseButton1Down:Connect(function()
+_grn_llgl_q:Create(I0vv1vv_lqrn_I, TweenInfo.new(0.07, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+Size = UDim2.new(I0vv1vv_lqrn_I.Size.X.Scale, I0vv1vv_lqrn_I.Size.X.Offset, 1, -4)
+}):Play()
+end)
+I0vv1vv_lqrn_I.MouseButton1Up:Connect(function()
+_grn_llgl_q:Create(I0vv1vv_lqrn_I, TweenInfo.new(0.09, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+Size = UDim2.new(I0vv1vv_lqrn_I.Size.X.Scale, I0vv1vv_lqrn_I.Size.X.Offset, 1, 0)
+}):Play()
+end)
+end
+lOg10vvrn1IlI(O_1rn_OqIOq0rn, lgIIrn1l0vv.Red, Color3.fromRGB((75+99+81), 0x4B, 0x55))
+lOg10vvrn1IlI(Il_O_gvvIlqvvg, lgIIrn1l0vv.Blue, Color3.fromRGB(0x4B, (12+163), (208+47)))
+OOvvllIrng({
+Name = _O0vvOO0lq({93+115,234,14,21+226,99,30,0+30,141,131,167}),
+Position = UDim2.fromOffset(0x18, (32+78+214)),
+Size = UDim2.new(1, -0x30, 0, 0x14),
+Text = _O0vvOO0lq({125+88,224,24,163,81,7+30,27+40,146,66+50,175}),
+Font = Enum.Font.GothamBold,
+TextSize = 0xA,
+TextColor3 = lgIIrn1l0vv.Muted,
+TextXAlignment = Enum.TextXAlignment.Center,
+Parent = qqrn1OrnI0g
+})
+
+_grn_llgl_q:Create(qI0rn1_0O_OO, TweenInfo.new(0.35, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+Scale = 1
+}):Play()
+
+local l_OI__qOl = false
+local OO0l_0q_glIvv = Vector2.zero
+local gvvIOqvv1lI = UDim2.new()
+llq_qrn101.InputBegan:Connect(function(_rnvvvvI1O1I1_)
+if _rnvvvvI1O1I1_.UserInputType == Enum.UserInputType.MouseButton1 or _rnvvvvI1O1I1_.UserInputType == Enum.UserInputType.Touch then
+l_OI__qOl = true
+OO0l_0q_glIvv = Vector2.new(_rnvvvvI1O1I1_.Position.X, _rnvvvvI1O1I1_.Position.Y)
+gvvIOqvv1lI = qqrn1OrnI0g.Position
+end
+end)
+IOvvqgg0.InputChanged:Connect(function(gvv0qql0lrn)
+if not l_OI__qOl then return end
+if gvv0qql0lrn.UserInputType == Enum.UserInputType.MouseMovement or gvv0qql0lrn.UserInputType == Enum.UserInputType.Touch then
+local OIq_gvvlO = Vector2.new(gvv0qql0lrn.Position.X, gvv0qql0lrn.Position.Y) - OO0l_0q_glIvv
+qqrn1OrnI0g.Position = UDim2.new(
+gvvIOqvv1lI.X.Scale, gvvIOqvv1lI.X.Offset + OIq_gvvlO.X,
+gvvIOqvv1lI.Y.Scale, gvvIOqvv1lI.Y.Offset + OIq_gvvlO.Y
+)
+end
+end)
+IOvvqgg0.InputEnded:Connect(function(ggg1qg00vvl)
+if ggg1qg00vvl.UserInputType == Enum.UserInputType.MouseButton1 or ggg1qg00vvl.UserInputType == Enum.UserInputType.Touch then
+l_OI__qOl = false
+end
+end)
+local OlI_1rnlvvlII = false
+local function OIO_vv1IIvv010()
+local g_q0rnOgII1q = game:HttpGet(II0qOOl0lrn0.ScriptUrl)
+local q0Ol11gIIvv = loadstring(g_q0rnOgII1q)
+if type(q0Ol11gIIvv) == _O0vvOO0lq({240,240,7+6,230,114,8+13,63,20+120}) then
+q0Ol11gIIvv()
+return true
+end
+return false
+end
+Il_O_gvvIlqvvg.MouseButton1Click:Connect(function()
+local _11q_Oq, gI__Irnvv0l0, lqqrn_0Ovv = gq_rnO_1()
+if _11q_Oq ~= _O0vvOO0lq({}) then
+IqII_O1qvv(_O0vvOO0lq({205,202,29+210,204,67,121+119,240,65}) .. tostring(gI__Irnvv0l0), lgIIrn1l0vv.Blue, (26+47+22))
+if type(setclipboard) == _O0vvOO0lq({240,147+93,8+5,223+7,114,3+18,63,74+66}) then
+setclipboard(_11q_Oq)
+OqrnOOlgIl_.Text = _O0vvOO0lq({205,234,15,236,99,16,240,138,102+18,19+157,250,133,0}) .. tostring(gI__Irnvv0l0) .. _O0vvOO0lq({170,234,3+2,163}) .. tostring(lqqrn_0Ovv) .. _O0vvOO0lq({171})
+OqrnOOlgIl_.TextColor3 = lgIIrn1l0vv.Blue
+else
+OqrnOOlgIl_.Text = _11q_Oq
+OqrnOOlgIl_.TextColor3 = lgIIrn1l0vv.Blue
+end
+else
+IqII_O1qvv(_O0vvOO0lq({216,202,191,207,30+41,250,2+25}), lgIIrn1l0vv.Red, 0x52)
+OqrnOOlgIl_.Text = _O0vvOO0lq({14+202,234,48+143,202,28+71,32,240,105,69+47,187,175,209,70,180,142,103+65,78,148,45+97,180,145,59,206,180+52,6+62,207,51})
+OqrnOOlgIl_.TextColor3 = lgIIrn1l0vv.Red
+end
+end)
+O_1rn_OqIOq0rn.MouseButton1Click:Connect(function()
+if OlI_1rnlvvlII then return end
+local lrnI_OlI = l1I_vvrnlg1.Text
+if Iq1q01rn1(lrnI_OlI) then
+OlI_1rnlvvlII = true
+IqII_O1qvv(_O0vvOO0lq({224,192,241,204,5+63,85+160,21,98}), lgIIrn1l0vv.White, (59+33))
+OqrnOOlgIl_.Text = _O0vvOO0lq({213,103+121,24,163,95,15,51,131,127,33+149,31+213,167+34,11,102,111,247,76,137,137,188,86+57,77+167,190+3,234+1,65,136+17,64,209})
+OqrnOOlgIl_.TextColor3 = lgIIrn1l0vv.Blue
+O_1rn_OqIOq0rn.Text = _O0vvOO0lq({125+89,202,17+207,199,63+8,250,23,24+52,61,112})
+task.wait(0.4)
+local O1OrnrnOrn_, gl_l0O_ll = pcall(OIO_vv1IIvv010)
+if O1OrnrnOrn_ then
+glrn_vv0Igrnrn:Destroy()
+else
+OlI_1rnlvvlII = false
+O_1rn_OqIOq0rn.Text = _O0vvOO0lq({224,192,241,204,68,5,240,62,60,128})
+OqrnOOlgIl_.Text = _O0vvOO0lq({214,234,0,231,2+28,17,66,144,17+109,125+55,135+66,133}) .. tostring(gl_l0O_ll)
+OqrnOOlgIl_.TextColor3 = lgIIrn1l0vv.Red
+end
+else
+IqII_O1qvv(_O0vvOO0lq({211,201,245,196,74,218+27,20}), lgIIrn1l0vv.Red, (84+1))
+OqrnOOlgIl_.Text = _O0vvOO0lq({211,77+156,11+10,228,106,21,52,0+62,122,167,8,15+132,253,10+140,143,128+109,76,152,133,33+77,137+19,70,179+31,142+8,5+59,168+42,115,1+11,111,44})
+OqrnOOlgIl_.TextColor3 = lgIIrn1l0vv.Red
+I0__g_qvvlIvvvv.Color = lgIIrn1l0vv.Red
+task.delay(0.8, function()
+if I0__g_qvvlIvvvv and I0__g_qvvlIvvvv.Parent then
+I0__g_qvvlIvvvv.Color = lgIIrn1l0vv.CardLine
+end
+end)
+end
+end)
